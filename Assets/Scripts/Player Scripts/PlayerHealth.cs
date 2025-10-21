@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float health;
-    public float maxHealth;
-    public Image healthBar;
+    [SerializeField] private float health;
+    [SerializeField] private float maxHealth;
+    [SerializeField] private Image healthBar;
     // Start is called before the first frame update
     void Start()
     {
