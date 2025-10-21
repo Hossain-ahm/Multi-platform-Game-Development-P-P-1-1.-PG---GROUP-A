@@ -13,23 +13,23 @@ public class PlayerInteract : MonoBehaviour
             Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
             foreach (Collider col in colliderArray)
             {
-                if (col.TryGetComponent(out FoodInteractor foodInteractor))
+                if (col.TryGetComponent(out IInteractor interactor))
                 {
-                    foodInteractor.Interact();
+                    interactor.Interact();
                 }
             }
         }
     }
 
-    public FoodInteractor GetfoodInteractor()
+    public IInteractor GetInteractor()
     {
         float interactRange = 2f;
         Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
         foreach (Collider col in colliderArray)
         {
-            if (col.TryGetComponent(out FoodInteractor foodInteractor))
+            if (col.TryGetComponent(out IInteractor interactor))
             {
-                return foodInteractor;
+                return interactor;
             }
         }
         return null;

@@ -17,10 +17,10 @@ public class PlayerUIInteract : MonoBehaviour
     void Update()
     {
         
-        if (playerInteract.GetfoodInteractor() != null)
+        if (playerInteract.GetInteractor() != null)
         {
             interactUI.SetActive(true);
-            interactText.text = playerInteract.GetfoodInteractor().GetInteractText();
+            interactText.text = playerInteract.GetInteractor().GetInteractText();
         }
         else
         {

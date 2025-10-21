@@ -2,15 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodInteractor : MonoBehaviour, IInteractor
+public class RockInteractor : MonoBehaviour,IInteractor
 {
     [SerializeField] private string interactTag;
-    [SerializeField] private PlayerHunger playerHungerScript;
-    [SerializeField] private float eatAmount;
     public void Interact()
     {
-        playerHungerScript.Eat(eatAmount);
-        Destroy(gameObject);
+        Debug.Log("Interacting with Rock");
     }
 
     public string GetInteractText()
