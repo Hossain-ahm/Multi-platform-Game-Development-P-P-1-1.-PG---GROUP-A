@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class PlayerHunger : MonoBehaviour
 {
-    public float hunger;
-    public float maxHunger;
-	public float hungerDecrease; // amount the hunger goes down
-	public float hungerRate; // rate of the hunger decreases
-	public float hungerTime; 
-    public Image hungerBar;
+    [SerializeField] private float hunger;
+    [SerializeField] private  float maxHunger;
+    [SerializeField] private  float hungerDecrease; // amount the hunger goes down
+    [SerializeField] private  float hungerRate; // rate of the hunger decreases
+    [SerializeField] private  float hungerTime; 
+    [SerializeField] private  Image hungerBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +26,10 @@ public class PlayerHunger : MonoBehaviour
 		if (!(hungerTime <= 0)) return;
 		hungerTime = hungerRate;
 		hunger -= hungerDecrease;
+    }
+
+    public void Eat(float amount)
+    {
+	    hunger += amount;
     }
 }

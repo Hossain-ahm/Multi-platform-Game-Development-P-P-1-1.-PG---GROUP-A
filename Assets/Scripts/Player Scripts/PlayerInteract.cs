@@ -21,7 +21,7 @@ public class PlayerInteract : MonoBehaviour
         }
     }
 
-    public bool GetfoodInteractor()
+    public FoodInteractor GetfoodInteractor()
     {
         float interactRange = 2f;
         Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
@@ -29,9 +29,9 @@ public class PlayerInteract : MonoBehaviour
         {
             if (col.TryGetComponent(out FoodInteractor foodInteractor))
             {
-                return true;
+                return foodInteractor;
             }
         }
-        return false;
+        return null;
     }
 }

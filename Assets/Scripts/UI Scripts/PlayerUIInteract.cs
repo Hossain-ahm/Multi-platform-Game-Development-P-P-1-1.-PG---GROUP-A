@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using TMPro;
 
 public class PlayerUIInteract : MonoBehaviour
 {
     [SerializeField] private GameObject interactUI;
-
     [SerializeField] private PlayerInteract playerInteract;
+    [SerializeField] private TextMeshProUGUI interactText;
 
     void Start()
     {
@@ -16,9 +17,10 @@ public class PlayerUIInteract : MonoBehaviour
     void Update()
     {
         
-        if (playerInteract.GetfoodInteractor())
+        if (playerInteract.GetfoodInteractor() != null)
         {
             interactUI.SetActive(true);
+            interactText.text = playerInteract.GetfoodInteractor().GetInteractText();
         }
         else
         {
