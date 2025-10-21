@@ -22,6 +22,10 @@ public class PlayerHunger : MonoBehaviour
     void Update()
     {
         hungerBar.fillAmount = Mathf.Clamp(hunger/maxHunger, 0, 1);
+        if (hunger >= maxHunger)
+        {
+	        hunger = maxHunger;
+        }
 		hungerTime -= Time.deltaTime;
 		if (!(hungerTime <= 0)) return;
 		hungerTime = hungerRate;
