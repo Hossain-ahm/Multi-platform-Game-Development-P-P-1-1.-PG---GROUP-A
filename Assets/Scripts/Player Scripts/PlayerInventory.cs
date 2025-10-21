@@ -14,9 +14,12 @@ public class PlayerInventory : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.I))
         {
-            Debug.Log(_items[0]);
+            foreach (var item in _items)
+            {
+                Debug.Log(item);
+            }
         }
     }
 }
