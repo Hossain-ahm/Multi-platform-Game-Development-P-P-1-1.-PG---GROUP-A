@@ -12,14 +12,13 @@ public class PlayerInventory : MonoBehaviour
         _items.Add(item);
     }
 
-    void Update()
+    public void RemoveFromInventory(string item)
     {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            foreach (var item in _items)
-            {
-                Debug.Log(item);
-            }
-        }
+        _items.Remove(item);
+    }
+
+    public List<string> GetInventory()
+    {
+        return _items;
     }
 }
