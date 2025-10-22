@@ -5,9 +5,11 @@ using UnityEngine;
 public class StickInteractor : MonoBehaviour,IInteractor
 {
     [SerializeField] private string interactTag;
+    [SerializeField] private PlayerInventory playerInventory;
     public void Interact()
     {
-        Debug.Log("Interacting with Stick");
+        playerInventory.AddToInventory("Stick");
+        Destroy(gameObject);
     }
 
     public string GetInteractText()

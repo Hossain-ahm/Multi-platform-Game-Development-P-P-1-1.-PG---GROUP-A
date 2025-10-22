@@ -5,9 +5,11 @@ using UnityEngine;
 public class RockInteractor : MonoBehaviour,IInteractor
 {
     [SerializeField] private string interactTag;
+    [SerializeField] private PlayerInventory playerInventory;
     public void Interact()
     {
-        Debug.Log("Interacting with Rock");
+        playerInventory.AddToInventory("Rock");
+        Destroy(gameObject);
     }
 
     public string GetInteractText()
