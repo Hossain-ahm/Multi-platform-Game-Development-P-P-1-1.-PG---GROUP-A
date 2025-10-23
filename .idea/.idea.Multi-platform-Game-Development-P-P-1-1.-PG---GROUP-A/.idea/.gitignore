@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/.idea.Multi-platform-Game-Development-P-P-1-1.-PG---GROUP-A.iml
+/projectSettingsUpdater.xml
+/contentModel.xml
+/modules.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
