@@ -11,9 +11,7 @@ public class BirdController : MonoBehaviour
     public float bankAngle = 30f;
     private float speedFactor = 0f;
     float boostDuration, boostTimer;
-    [SerializeField] float rotationSpeed = 2f;
-    [SerializeField] float pitchAmount = 30f;
-    [SerializeField] float rollAmount = 45f;
+
     [SerializeField] Animator birdAnimator;
 
     private Rigidbody rb;
