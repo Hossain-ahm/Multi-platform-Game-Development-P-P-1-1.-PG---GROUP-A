@@ -81,7 +81,8 @@ public class BirdController : MonoBehaviour
         if (flapQueued)
         {
             rb.AddForce(Vector3.up * flapUpForce + transform.forward * flapForwardForce, ForceMode.Impulse);
-            birdAnimator.SetTrigger("flap");
+            if (birdAnimator != null)
+                birdAnimator.SetTrigger("flap");
             flapQueued = false;
         }
 
