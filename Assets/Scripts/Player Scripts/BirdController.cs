@@ -50,7 +50,6 @@ public class BirdController : MonoBehaviour
                 diveUp = true;
                 speedFactor = Mathf.Clamp(rb.velocity.magnitude, 0f, 100f);
                 boostDuration = Mathf.Min(speedFactor / 10f, 4f);
-                Debug.Log("UP" + boostDuration + " " + speedFactor);
                 boostTimer = 0f;
                 isBoosting = true; hasDove = false;
             }
