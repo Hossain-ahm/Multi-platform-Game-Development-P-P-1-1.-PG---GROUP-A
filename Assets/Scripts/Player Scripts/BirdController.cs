@@ -104,7 +104,7 @@ public class BirdController : MonoBehaviour
         {
             StopCancelled();
             boostTimer += Time.fixedDeltaTime;
-            float lift = defaultLiftForce * (speedFactor / 5f);
+            float lift = defaultLiftForce * (speedFactor / 10f);
             rb.AddForce(Vector3.up * lift, ForceMode.Acceleration);
             rb.AddForce(transform.forward * speedFactor / 25f, ForceMode.Acceleration);
             if (boostTimer >= boostDuration)
