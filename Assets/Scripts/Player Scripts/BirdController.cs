@@ -180,6 +180,7 @@ public class BirdController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.layer == 6 && !stopping && !grounded)
         {
             Debug.Log(rb.velocity);
@@ -191,7 +192,6 @@ public class BirdController : MonoBehaviour
 
     void StopCancelled()
     {
-        Debug.Log("CANNCELLED");
         birdAnimator.SetBool("stopping", false);
         stoppingPS.Stop();
         stopping = false;
