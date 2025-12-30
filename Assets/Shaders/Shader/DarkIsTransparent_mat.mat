@@ -7,14 +7,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CloudShadermat
-  m_Shader: {fileID: -6465566751694194690, guid: ccf254629db72064eb5ca379aead33b8,
+  m_Name: DarkIsTransparent_mat
+  m_Shader: {fileID: -6465566751694194690, guid: 0047ffd67b66b734d943450d1f9ab53d,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -38,19 +38,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphClip: -90.3
-    - _Alpha: 2.01
-    - _CloudPower: 1.03
-    - _CloudScale: 75.97
-    - _DeformScale: 60
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _CloudSpeed: {r: 0, g: 0.01, b: 0, a: 0}
-    - _Color: {r: 0.023375623, g: 0.023375623, b: 0.046751253, a: 2.9803922}
-    - _DeformSpeed: {r: 0, g: 0.01, b: 0, a: 0}
+    - _baseCol: {r: 1.5376099, g: 2.7942774, b: 2.9960783, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &6898994165376485453
+--- !u!114 &8987701943718297338
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

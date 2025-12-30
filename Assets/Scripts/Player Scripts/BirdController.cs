@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class BirdController : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class BirdController : MonoBehaviour
     [SerializeField] LayerMask groundLayer;
     [SerializeField] ParticleSystem stoppingPS;
     [SerializeField] float groundDeceleration = 10f;
+    [SerializeField] Slider staminaBar;
+    [SerializeField] float passiveStamGain = 0.01f, lauchStamDecay= 0.1f, flapStamDecay = 0.25f;
 
     private Rigidbody rb;
     bool flapQueued = false, diveUp = false, isBoosting = false, hasDove = false;
@@ -30,13 +33,12 @@ public class BirdController : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && staminaBar.value >= flapStamDecay)
         {
             grounded = false;
             stopping = false;
             flapQueued = true;
         }
-
     }
 
     void FixedUpdate()
@@ -50,10 +52,11 @@ public class BirdController : MonoBehaviour
         float forwardInput = Input.GetAxis("Vertical");
         if (forwardInput > 0f)
         {
-            if (!grounded)
+            if (!grounded && staminaBar.value >= lauchStamDecay)
             {
                 rb.AddForce(transform.forward * 10f, ForceMode.Acceleration);
                 rb.AddForce(Vector3.down * (hoverLiftForce / 2), ForceMode.Acceleration);
+                staminaBar.value -= lauchStamDecay;
                 hasDove = true;
             }
             else
@@ -76,9 +79,9 @@ public class BirdController : MonoBehaviour
                 }
             }
         }
-        else
+        else if(forwardInput ==  0f) 
         {
-
+            staminaBar.value += passiveStamGain;
         }
 
         //DIVING UP ON KEY PRESSED
@@ -100,8 +103,9 @@ public class BirdController : MonoBehaviour
             boostTimer = 0f;
         }
         //ACTUAL DIVEUP FORCES APPLIED
-        if (diveUp && isBoosting && !stopping && !grounded)
+        if (diveUp && isBoosting && !stopping && !grounded && staminaBar.value >= lauchStamDecay)
         {
+            staminaBar.value -= lauchStamDecay;
             StopCancelled();
             boostTimer += Time.fixedDeltaTime;
             float lift = defaultLiftForce * (speedFactor / 10f);
@@ -115,9 +119,10 @@ public class BirdController : MonoBehaviour
         }
 
         //FLAP WINGS
-        if (flapQueued)
+        if (flapQueued )
         {
             flapQueued = false;
+            staminaBar.value -= flapStamDecay;
             rb.AddForce(Vector3.up * flapUpForce + transform.forward * flapForwardForce, ForceMode.Impulse);
             if (birdAnimator != null)
                 birdAnimator.SetTrigger("flap");

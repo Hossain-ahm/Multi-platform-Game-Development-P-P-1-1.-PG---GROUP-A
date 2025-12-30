@@ -30,7 +30,7 @@ public class LightingManager : MonoBehaviour
         if (dirLight != null)
         {
             dirLight.color = preset.DirectionalColor.Evaluate(timePercent);
-            dirLight.transform.localRotation = Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 170f, 0));
+            dirLight.transform.localRotation = Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 66.8f, 0));
             cloudMat.color = preset.CloudColor.Evaluate(timePercent) * (20f * preset.CloudHDR.Evaluate(timePercent).r);
         }
     }
