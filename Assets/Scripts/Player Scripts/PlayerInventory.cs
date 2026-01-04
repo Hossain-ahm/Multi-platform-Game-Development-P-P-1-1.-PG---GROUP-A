@@ -5,20 +5,15 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    private readonly List<string> _items = new List<string>();
+    public List<ItemClass> items = new List<ItemClass>();
+
+    public void AddItem(ItemClass itemClass)
+    {
+        items.Add(itemClass);
+    }
     
-    public void AddToInventory(string item) 
+    public void RemoveItem(ItemClass itemClass)
     {
-        _items.Add(item);
-    }
-
-    public void RemoveFromInventory(string item)
-    {
-        _items.Remove(item);
-    }
-
-    public List<string> GetInventory()
-    {
-        return _items;
+        items.Remove(itemClass);
     }
 }

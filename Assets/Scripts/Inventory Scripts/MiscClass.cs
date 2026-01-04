@@ -1,6 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
-
+[CreateAssetMenu(fileName = "New Misc item", menuName = "Item/Misc")]
 public class MiscClass : ItemClass
 {
     public override ItemClass GetItem()

@@ -8,14 +8,5 @@ public class ButtonUI : MonoBehaviour
 
     public void CraftSword()
     {
-        if (playerInventory.GetInventory().Contains("Stick") && playerInventory.GetInventory().Contains("Rock"))
-        {
-            playerInventory.RemoveFromInventory("Stick");
-            playerInventory.RemoveFromInventory("Rock");
-            
-            playerInventory.AddToInventory("Stone Sword");
-            
-
-        }
     }
 }
