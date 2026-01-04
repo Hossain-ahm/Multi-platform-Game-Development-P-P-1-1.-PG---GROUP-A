@@ -954,10 +954,16 @@ MonoBehaviour:
   hoverLiftForce: 10
   turnSpeed: 60
   bankAngle: 30
-  rotationSpeed: 2
-  pitchAmount: 30
-  rollAmount: 45
   birdAnimator: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  stoppingPS: {fileID: 0}
+  groundDeceleration: 10
+  staminaBar: {fileID: 0}
+  passiveStamGain: 0.01
+  lauchStamDecay: 0.1
+  flapStamDecay: 0.2
 --- !u!114 &4509481779253175234
 MonoBehaviour:
   m_ObjectHideFlags: 0
