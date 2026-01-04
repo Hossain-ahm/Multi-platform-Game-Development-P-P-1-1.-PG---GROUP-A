@@ -9,3 +9,5 @@ Free Low Poly Desert Pack : https://assetstore.unity.com/packages/3d/environment
 Fantasy Skybox FREE : https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353
 
 Bird model FREE : https://www.cgtrader.com/free-3d-models/animals/bird/achara-bird
+
+Low-Poly Trees : https://assetstore.unity.com/packages/3d/environments/pandazole-nature-environment-low-poly-pack-212621
