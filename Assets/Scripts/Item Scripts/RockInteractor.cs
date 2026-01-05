@@ -8,7 +8,6 @@ public class RockInteractor : MonoBehaviour,IInteractor
     [SerializeField] private PlayerInventory playerInventory;
     public void Interact()
     {
-        playerInventory.AddToInventory("Rock");
         Destroy(gameObject);
     }
 

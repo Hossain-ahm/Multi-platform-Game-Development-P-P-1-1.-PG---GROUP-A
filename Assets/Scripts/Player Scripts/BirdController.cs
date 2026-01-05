@@ -13,13 +13,24 @@ public class BirdController : MonoBehaviour
     private float speedFactor = 0f;
     float boostDuration, boostTimer;
 
+    enum BirdState
+    {
+        Idle,
+        Hover,
+        Walk,
+        Dive,
+        DiveUp
+    }
+
+    BirdState currentState;
+
     bool stopping, grounded;
     [SerializeField] Animator birdAnimator;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] ParticleSystem stoppingPS;
     [SerializeField] float groundDeceleration = 10f;
     [SerializeField] Slider staminaBar;
-    [SerializeField] float passiveStamGain = 0.01f, lauchStamDecay= 0.1f, flapStamDecay = 0.25f;
+    [SerializeField] float passiveStamGain = 0.01f, lauchStamDecay = 0.1f, flapStamDecay = 0.25f;
 
     private Rigidbody rb;
     bool flapQueued = false, diveUp = false, isBoosting = false, hasDove = false;
@@ -55,13 +66,14 @@ public class BirdController : MonoBehaviour
             if (!grounded && staminaBar.value >= lauchStamDecay)
             {
                 rb.AddForce(transform.forward * 10f, ForceMode.Acceleration);
-                rb.AddForce(Vector3.down * (hoverLiftForce / 2), ForceMode.Acceleration);
+                rb.AddForce(Vector3.down * (hoverLiftForce ), ForceMode.Acceleration);
+                SetState(BirdState.Dive);
                 staminaBar.value -= lauchStamDecay;
                 hasDove = true;
             }
             else
             {
-                if (!stopping)
+                if (grounded && !stopping)
                 {
                     Vector3 velocity = rb.velocity;
 
@@ -74,14 +86,19 @@ public class BirdController : MonoBehaviour
                         velocity.y,
                         targetVelocity.z
                     );
-                    walking = true;
-                    birdAnimator.SetTrigger("walking");
+                    SetState(BirdState.Walk);
+                    staminaBar.value += passiveStamGain;
                 }
             }
         }
-        else if(forwardInput ==  0f) 
+        else if (forwardInput == 0f)
         {
             staminaBar.value += passiveStamGain;
+
+            if (grounded && !stopping)
+                SetState(BirdState.Idle);
+            else if (!grounded)
+                SetState(BirdState.Hover);
         }
 
         //DIVING UP ON KEY PRESSED
@@ -111,15 +128,17 @@ public class BirdController : MonoBehaviour
             float lift = defaultLiftForce * (speedFactor / 10f);
             rb.AddForce(Vector3.up * lift, ForceMode.Acceleration);
             rb.AddForce(transform.forward * speedFactor / 25f, ForceMode.Acceleration);
+            SetState(BirdState.DiveUp);
             if (boostTimer >= boostDuration)
             {
+                SetState(BirdState.Hover);
                 isBoosting = false;
                 diveUp = false;
             }
         }
 
         //FLAP WINGS
-        if (flapQueued )
+        if (flapQueued)
         {
             flapQueued = false;
             staminaBar.value -= flapStamDecay;
@@ -182,7 +201,37 @@ public class BirdController : MonoBehaviour
             }
         }
     }
+    void SetState(BirdState newState)
+    {
+        if (currentState == newState) return; 
 
+        currentState = newState;
+
+        switch (newState)
+        {
+            case BirdState.Idle:
+                birdAnimator.SetTrigger("idle");
+                break;
+
+            case BirdState.Hover:
+                birdAnimator.SetTrigger("hover");
+                break;
+
+            case BirdState.Walk:
+                birdAnimator.SetTrigger("walking");
+                break;
+            case BirdState.Dive:
+                birdAnimator.SetTrigger("diving");
+                break;
+            case BirdState.DiveUp:
+                birdAnimator.SetTrigger("divingUp");
+                break;
+        }
+    }
+    public void SmiteDown()
+    {
+        rb.AddForce(Vector3.down * flapUpForce * 4, ForceMode.Impulse);
+    }
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log(collision.gameObject.name);
