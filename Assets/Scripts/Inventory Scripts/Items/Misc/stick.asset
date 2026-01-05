@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: stick
   m_EditorClassIdentifier: 
   itemName: 
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: cd6904d307c4ff5c68b5e646ed65ebbc, type: 3}
+  isStackable: 1
