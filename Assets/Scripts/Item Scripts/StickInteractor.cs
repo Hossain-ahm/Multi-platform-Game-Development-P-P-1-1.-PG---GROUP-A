@@ -8,7 +8,6 @@ public class StickInteractor : MonoBehaviour,IInteractor
     [SerializeField] private PlayerInventory playerInventory;
     public void Interact()
     {
-        playerInventory.AddToInventory("Stick");
         Destroy(gameObject);
     }
 
