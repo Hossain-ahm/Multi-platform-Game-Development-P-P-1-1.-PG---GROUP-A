@@ -612,7 +612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33258230}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4432389, y: 0.38595667, z: -0.21969971, w: 0.7786584}
+  m_LocalRotation: {x: 0.4432389, y: 0.3859567, z: -0.21969974, w: 0.7786583}
   m_LocalPosition: {x: -930.2416, y: -68.943405, z: -108.384766}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15087,7 +15087,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618931357}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4432389, y: 0.38595667, z: -0.21969971, w: 0.7786584}
+  m_LocalRotation: {x: 0.4432389, y: 0.3859567, z: -0.21969974, w: 0.7786583}
   m_LocalPosition: {x: -560.50104, y: 87.57561, z: 64.25865}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -48099,7 +48099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactUI: {fileID: 1926177772}
-  playerInteract: {fileID: 0}
+  playerInteract: {fileID: 6160170957132045543}
   interactText: {fileID: 1926177774}
 --- !u!114 &945707570
 MonoBehaviour:
@@ -89031,7 +89031,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586805342}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.058105964, y: 0.44317177, z: -0.028801333, w: 0.89408785}
+  m_LocalRotation: {x: 0.058105968, y: 0.44317177, z: -0.028801333, w: 0.89408785}
   m_LocalPosition: {x: -561.0024, y: 87.07561, z: 63.87716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -127696,7 +127696,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1126523534}
   characterImage: {fileID: 960357740}
   availableCharacters:
-  - pfp: {fileID: 21300000, guid: 26ed9623cfd9d4ba1ad93c5730c36e8e, type: 3}
+  - pfp: {fileID: 21300000, guid: 42b4920637627b301b33087faec9cfdf, type: 3}
     name: Nonad
   DialogueCanvas: {fileID: 1246742307}
 --- !u!1 &2036262436
@@ -139247,7 +139247,7 @@ MonoBehaviour:
   slotholder: {fileID: 976931094}
   hotbar: {fileID: 842999721}
   itemClassToAdd: {fileID: 11400000, guid: 65055987b3fd69ef0a614ebea313116d, type: 2}
-  itemClassToRemove: {fileID: 0}
+  itemClassToRemove: {fileID: 11400000, guid: 65055987b3fd69ef0a614ebea313116d, type: 2}
   movingCursor: {fileID: 515542054}
   weaponObject: {fileID: 240461549}
   isWeaponEquiped: 0
