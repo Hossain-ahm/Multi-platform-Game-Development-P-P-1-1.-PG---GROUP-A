@@ -12,22 +12,128 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] private GameObject slotholder;
     [SerializeField] private ItemClass itemClassToAdd;
     [SerializeField] private ItemClass itemClassToRemove;
+    [SerializeField] private GameObject movingCursor;
+    private SlotClass[] items;
     
-    public List<SlotClass> items = new List<SlotClass>();
     private GameObject[] slots;
+    
+    private SlotClass movingSlot;
+    
+    private SlotClass tempSlots;
+    private SlotClass originalSlots;
+    private bool isMovingItem;
 
-    public void Start()
+    private void Start()
     {
         slots = new GameObject[slotholder.transform.childCount];
+        items = new SlotClass[slots.Length];
+        for (int i = 0; i < items.Length; i++)
+        {
+            items[i] = new SlotClass();
+        }
+        
+        
         for (int i = 0; i < slotholder.transform.childCount; i++)
         {
             slots[i] = slotholder.transform.GetChild(i).gameObject;
         }
 
         
-        AddItem(itemClassToAdd);
-        RemoveItem(itemClassToRemove);
+        AddItem(itemClassToAdd,1);
+        AddItem(itemClassToRemove,1);
+        AddItem(itemClassToAdd,1);
+        AddItem(itemClassToAdd,1);
+        AddItem(itemClassToAdd,1);
+        RemoveItem(itemClassToAdd);
         RefreshUI();
+    }
+
+    private void Update()
+    {
+        movingCursor.SetActive(isMovingItem);
+        movingCursor.transform.position = Input.mousePosition;
+        if (isMovingItem)
+            movingCursor.GetComponent<Image>().sprite = movingSlot.GetItem().itemIcon;
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (isMovingItem)
+            {
+                EndItemMove();
+            }
+            else
+            {
+                BeginItemMove();
+            }
+            
+        }
+    }
+
+    private bool BeginItemMove()
+    {
+        this.originalSlots = GetClosestSlot();
+        if (originalSlots == null || originalSlots.GetItem() == null)
+            return false;
+        
+        this.movingSlot = new SlotClass(originalSlots);
+        originalSlots.Clear();
+        isMovingItem = true;
+        RefreshUI();
+        return true;
+    }
+
+    private bool EndItemMove()
+    {
+        originalSlots = GetClosestSlot();
+        if (originalSlots == null)
+        {
+            AddItem(movingSlot.GetItem(),movingSlot.GetQuantity());
+            movingSlot.Clear();
+        }
+        else
+        {
+            if (originalSlots.GetItem() != null)
+            {
+                if (originalSlots.GetItem() == movingSlot.GetItem())
+                {
+                    if (originalSlots.GetItem().isStackable)
+                    {
+                        originalSlots.AddQuantity(movingSlot.GetQuantity());
+                        movingSlot.Clear();
+                    }
+                    else
+                    {
+                        return false;
+
+                    }
+                }
+                else
+                {
+                    tempSlots = new SlotClass(originalSlots);
+                    originalSlots.AddItem(movingSlot.GetItem(), movingSlot.GetQuantity());
+                    movingSlot.AddItem(tempSlots.GetItem(), tempSlots.GetQuantity());
+                    RefreshUI();
+                    return true;
+                }
+            }
+            else
+            {
+                originalSlots.AddItem(movingSlot.GetItem(), movingSlot.GetQuantity());
+                movingSlot.Clear();
+            }
+        }
+
+        isMovingItem = false;
+        RefreshUI();
+        return true;
+    }
+    private SlotClass GetClosestSlot()
+    {
+        for (int i = 0;i < slots.Length; i++)
+        {
+            if (Vector2.Distance(slots[i].transform.position,Input.mousePosition) <= 32)
+                return items[i];
+        }
+        return null;
     }
 
     public void RefreshUI()
@@ -36,6 +142,7 @@ public class PlayerInventory : MonoBehaviour
         {
             try
             {
+                slots[i].transform.GetChild(1).GetComponent<Image>().enabled= true;
                 slots[i].transform.GetChild(1).GetComponent<Image>().sprite = items[i].GetItem().itemIcon;
                 if (items[i].GetItem().isStackable)
                     slots[i].transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = items[i].GetQuantity().ToString();
@@ -53,22 +160,21 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    public bool AddItem(ItemClass itemClass)
+    public bool AddItem(ItemClass itemClass,int quantity)
     {
         SlotClass slotClass = ContainsItem(itemClass);
-        if (slotClass != null){
+        if (slotClass != null && slotClass.GetItem().isStackable){
             slotClass.AddQuantity(1);
-            
         }
         else
         {
-            if (items.Count < slots.Length)
+            for (int i = 0; i < items.Length; i++)
             {
-                items.Add(new SlotClass(itemClass,1));
-            }
-            else
-            {
-                return false;
+                if (items[i].GetItem() == null)
+                {
+                    items[i].AddItem(itemClass,quantity);
+                    break;
+                }
             }
             
         }
@@ -85,16 +191,16 @@ public class PlayerInventory : MonoBehaviour
                 temp.AddQuantity(-1);
             else
             {
-                SlotClass slotClassToremove = new SlotClass();
-                foreach (SlotClass slotClass in items)
+                int slotToRemove = 0;
+                for (int i = 0; i < items.Length; i++)
                 {
-                    if (slotClass.GetItem() == itemClass)
+                    if (items[i].GetItem() == itemClass)
                     {
-                        items.Remove(slotClass);
+                        slotToRemove = i;
                         break;
                     }
                 }
-                items.Remove(slotClassToremove);
+                items[slotToRemove].Clear();
             }
         }
         else
@@ -107,12 +213,10 @@ public class PlayerInventory : MonoBehaviour
 
     public SlotClass ContainsItem(ItemClass itemClass)
     {
-        foreach (SlotClass slotClass in items)
+        for (int i = 0; i < items.Length; i++)
         {
-            if (slotClass.GetItem() == itemClass)
-            {
-                return slotClass;
-            }
+            if (items[i].GetItem() == itemClass)
+                return items[i];
         }
         return null;
     }
