@@ -10,21 +10,30 @@ using TMPro;
 public class PlayerInventory : MonoBehaviour
 {
     [SerializeField] private GameObject slotholder;
+    [SerializeField] private GameObject hotbar;
     [SerializeField] private ItemClass itemClassToAdd;
     [SerializeField] private ItemClass itemClassToRemove;
     [SerializeField] private GameObject movingCursor;
-    private SlotClass[] items;
+    [SerializeField] private GameObject weaponObject;
     
+    
+    private SlotClass[] items;
     private GameObject[] slots;
     
     private SlotClass movingSlot;
+    private SlotClass checkslot;
     
     private SlotClass tempSlots;
     private SlotClass originalSlots;
+    private SlotClass weapon;
+    private bool isWeaponEquiped = false;
     private bool isMovingItem;
 
     private void Start()
     {
+        weaponObject.transform.GetChild(1).GetComponent<Image>().enabled= false;
+        weaponObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
+        weapon = new SlotClass();
         slots = new GameObject[slotholder.transform.childCount];
         items = new SlotClass[slots.Length];
         for (int i = 0; i < items.Length; i++)
@@ -37,7 +46,7 @@ public class PlayerInventory : MonoBehaviour
         {
             slots[i] = slotholder.transform.GetChild(i).gameObject;
         }
-
+        
         
         AddItem(itemClassToAdd,1);
         AddItem(itemClassToRemove,1);
@@ -64,6 +73,35 @@ public class PlayerInventory : MonoBehaviour
             {
                 BeginItemMove();
             }
+            
+        }
+
+        if (!Input.GetMouseButtonDown(1)) return;
+        try
+        {
+            if (Vector2.Distance(weaponObject.transform.position, Input.mousePosition) <= 32)
+            {
+                if (weapon.GetItem() != null)
+                {
+                    AddItem(weapon.GetItem(), 1);
+                    weapon.Clear();
+                    weaponObject.transform.GetChild(1).GetComponent<Image>().enabled= false;
+                    isWeaponEquiped=false;
+                }
+            }
+            checkslot = GetClosestSlot();
+            if (checkslot.GetItem().GetToolItem() == null) return;
+            if (checkslot.GetItem().GetToolItem().tooltype != ToolClass.Tooltype.weapon ||
+                weapon.GetItem() != null) return;
+            RemoveItem(checkslot.GetItem());
+            weapon = new SlotClass(checkslot);
+            weaponObject.transform.GetChild(1).GetComponent<Image>().enabled = true;
+            weaponObject.transform.GetChild(1).GetComponent<Image>().sprite =
+                checkslot.GetItem().GetItem().itemIcon;
+            isWeaponEquiped = true;
+        }
+        catch
+        {
             
         }
     }
@@ -138,6 +176,7 @@ public class PlayerInventory : MonoBehaviour
 
     public void RefreshUI()
     {
+        
         for (int i = 0; i < slots.Length; i++)
         {
             try
