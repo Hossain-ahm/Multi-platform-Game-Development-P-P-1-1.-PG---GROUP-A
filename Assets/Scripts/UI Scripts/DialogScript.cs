@@ -1,18 +1,28 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialogScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] List<DialogInstance> scene = new List<DialogInstance>();
 
-    // Update is called once per frame
-    void Update()
+    public void TriggerDialogue()
     {
-        
+        FindObjectOfType<DialogueManager>().StartScene(scene);
     }
+}
+
+[Serializable]
+public class DialogInstance
+{
+    public string dialog;
+    public characters character;
+    public enum characters { nonad, player};
+
+    public emotions tone;
+    public enum emotions { normal, angry, excited};
+
+    public UnityEvent action;
 }
