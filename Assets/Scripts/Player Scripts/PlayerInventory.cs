@@ -26,7 +26,7 @@ public class PlayerInventory : MonoBehaviour
     private SlotClass tempSlots;
     private SlotClass originalSlots;
     private SlotClass weapon;
-    private bool isWeaponEquiped = false;
+    public bool isWeaponEquiped = false;
     private bool isMovingItem;
 
     private void Start()
