@@ -11,3 +11,5 @@ Fantasy Skybox FREE : https://assetstore.unity.com/packages/2d/textures-material
 Bird model FREE : https://www.cgtrader.com/free-3d-models/animals/bird/achara-bird
 
 Low-Poly Trees : https://assetstore.unity.com/packages/3d/environments/pandazole-nature-environment-low-poly-pack-212621
+
+feather png: https://www.kindpng.com/imgv/hhibT_feather-png-download-image-gold-transparent-feather-png/
