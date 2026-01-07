@@ -1,22 +1,56 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private float health;
-    [SerializeField] private float maxHealth;
-    [SerializeField] private Image healthBar;
-    // Start is called before the first frame update
+    /* ---------- CONFIG ---------- */
+    [Header("Health")]
+    [SerializeField] float maxHealth = 100f;
+    [SerializeField] float currentHealth;
+
+    [Header("UI")]
+    [SerializeField] Image healthBar;
+
+    /* ---------- INITIALIZATION ---------- */
+
     void Start()
     {
-        maxHealth = health;   
+        currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
+        UpdateUI();
     }
 
-    // Update is called once per frame
-    void Update()
+    /* ---------- DAMAGE ---------- */
+
+    public void TakeDamage(float amount)
     {
-        healthBar.fillAmount = Mathf.Clamp(health/maxHealth, 0, 1);
+        if (currentHealth <= 0f) return;
+
+        currentHealth -= amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
+
+        UpdateUI();
+
+        if (currentHealth <= 0f)
+        {
+            Die();
+        }
+    }
+
+    /* ---------- UI ---------- */
+
+    void UpdateUI()
+    {
+        if (healthBar != null)
+        {
+            healthBar.fillAmount = currentHealth / maxHealth;
+        }
+    }
+
+    /* ---------- DEATH ---------- */
+
+    void Die()
+    {
+        Debug.Log("Player died");
+        // Future: disable controls, play animation, trigger game over
     }
 }

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c8540c8847eced741afcf08a8ef0ae15
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - firePoint: {instanceID: 0}
+  - fireProjectile: {fileID: 4385438399212601702, guid: 90d7502b492b9594daad7b84b64af651,
+      type: 3}
+  - frostProjectile: {fileID: 4385438399212601702, guid: 94a151d949178094185fe178b0388749,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
