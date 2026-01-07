@@ -76,7 +76,7 @@ public class PlayerHealth : MonoBehaviour
         damageCoroutine = null; // reset coroutine reference
     }
 
-    private void TakeDamage(float amount)
+    public void TakeDamage(float amount)
     {
         Debug.Log("DAMAGED FOR " + amount);
         damageFlash.SetTrigger("damage");
