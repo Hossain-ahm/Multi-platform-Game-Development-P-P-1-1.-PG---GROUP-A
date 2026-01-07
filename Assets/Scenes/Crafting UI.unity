@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1829407686658052438}
-  m_IndirectSpecularColor: {r: 0.08830462, g: 0.17032066, b: 0.18995017, a: 1}
+  m_IndirectSpecularColor: {r: 0.08830145, g: 0.17031589, b: 0.189948, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7851,7 +7851,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactTag: Press E to collect Rock
   playerInventory: {fileID: 6230663729389802126}
-  itemClass: {fileID: 11400000, guid: c47c7a6e52b199cc0944c9fa4b905c8e, type: 2}
 --- !u!54 &305411365
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33364,22 +33363,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6210465401825304586, guid: 2d8aa5e6a4480d02eb4fa520e90983ec,
         type: 3}
-      propertyPath: itemClass
-      value: 
-      objectReference: {fileID: 11400000, guid: 5fcdee90b716bcdc7b71ccb86ff4565f,
-        type: 2}
-    - target: {fileID: 6210465401825304586, guid: 2d8aa5e6a4480d02eb4fa520e90983ec,
-        type: 3}
-      propertyPath: interactTag
-      value: press E to pick up
-      objectReference: {fileID: 0}
-    - target: {fileID: 6210465401825304586, guid: 2d8aa5e6a4480d02eb4fa520e90983ec,
-        type: 3}
-      propertyPath: playerInventory
-      value: 
-      objectReference: {fileID: 6230663729389802126}
-    - target: {fileID: 6210465401825304586, guid: 2d8aa5e6a4480d02eb4fa520e90983ec,
-        type: 3}
       propertyPath: playerHungerScript
       value: 
       objectReference: {fileID: 1352658368336968692}
@@ -49520,12 +49503,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2348149040629100270, guid: b1fc645a74b09550b86ce956fb9169e0,
-        type: 3}
-      propertyPath: itemClass
-      value: 
-      objectReference: {fileID: 11400000, guid: 883e962580ab26f66b915289de7b7dc9,
-        type: 2}
     - target: {fileID: 2348149040629100270, guid: b1fc645a74b09550b86ce956fb9169e0,
         type: 3}
       propertyPath: playerInventory
@@ -66880,21 +66857,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6901531019047428981, guid: 2bf7dc2cd923dfe06a4a9b4a65dd5467,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.3965
-      objectReference: {fileID: 0}
-    - target: {fileID: 6901531019047428981, guid: 2bf7dc2cd923dfe06a4a9b4a65dd5467,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.529864
-      objectReference: {fileID: 0}
-    - target: {fileID: 6901531019047428981, guid: 2bf7dc2cd923dfe06a4a9b4a65dd5467,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.998835
-      objectReference: {fileID: 0}
-    - target: {fileID: 6901531019047428981, guid: 2bf7dc2cd923dfe06a4a9b4a65dd5467,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: -107.56077
       objectReference: {fileID: 0}
@@ -66945,19 +66907,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8487622224830258379, guid: 2bf7dc2cd923dfe06a4a9b4a65dd5467,
         type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8487622224830258379, guid: 2bf7dc2cd923dfe06a4a9b4a65dd5467,
-        type: 3}
       propertyPath: craftingUI
       value: 
       objectReference: {fileID: 1527256126}
-    - target: {fileID: 8487622224830258379, guid: 2bf7dc2cd923dfe06a4a9b4a65dd5467,
-        type: 3}
-      propertyPath: playerInventory
-      value: 
-      objectReference: {fileID: 6230663729389802126}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -67355,7 +67307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.77935773, b: 0.5886792, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -90573,12 +90525,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555723617}
   m_CullTransparentMesh: 1
---- !u!1 &1560074932 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5314737608833646579, guid: 3282b505bb033dc1c8d6c9a53d0bfba9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1017689292}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1560370787
 GameObject:
   m_ObjectHideFlags: 0
@@ -90699,17 +90645,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7895239599497794366, guid: ebe3bf0e88dfe9df09fd3d7bc80a7f49,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175816832705204639, guid: ebe3bf0e88dfe9df09fd3d7bc80a7f49,
-        type: 3}
-      propertyPath: itemClass
-      value: 
-      objectReference: {fileID: 11400000, guid: 7a6706611aa4679a58bee93cc02e7d8c,
-        type: 2}
     - target: {fileID: 8175816832705204639, guid: ebe3bf0e88dfe9df09fd3d7bc80a7f49,
         type: 3}
       propertyPath: playerInventory
@@ -90800,7 +90735,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586805342}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.058105983, y: 0.44317177, z: -0.028801346, w: 0.8940878}
+  m_LocalRotation: {x: 0.058105968, y: 0.44317174, z: -0.028801337, w: 0.89408785}
   m_LocalPosition: {x: -561.008, y: 87.05861, z: 63.872818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -108314,12 +108249,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &1807080837 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5314737608833646579, guid: 3282b505bb033dc1c8d6c9a53d0bfba9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1941877421}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1812865382
 GameObject:
   m_ObjectHideFlags: 0
@@ -124160,27 +124089,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7895239599497794366, guid: ebe3bf0e88dfe9df09fd3d7bc80a7f49,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175816832705204639, guid: ebe3bf0e88dfe9df09fd3d7bc80a7f49,
-        type: 3}
-      propertyPath: itemClass
-      value: 
-      objectReference: {fileID: 11400000, guid: 7a6706611aa4679a58bee93cc02e7d8c,
-        type: 2}
     - target: {fileID: 8175816832705204639, guid: ebe3bf0e88dfe9df09fd3d7bc80a7f49,
         type: 3}
       propertyPath: playerInventory
       value: 
       objectReference: {fileID: 6230663729389802126}
-    - target: {fileID: 8250540815014883545, guid: ebe3bf0e88dfe9df09fd3d7bc80a7f49,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6214446
-      objectReference: {fileID: 0}
     - target: {fileID: 8250540815014883545, guid: ebe3bf0e88dfe9df09fd3d7bc80a7f49,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -129664,11 +129577,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1126523534}
+  nameText: {fileID: 0}
   characterImage: {fileID: 960357740}
   availableCharacters:
   - pfp: {fileID: 21300000, guid: 42b4920637627b301b33087faec9cfdf, type: 3}
     name: Nonad
   DialogueCanvas: {fileID: 1246742307}
+  typingSrc: {fileID: 0}
 --- !u!1 &2036262436
 GameObject:
   m_ObjectHideFlags: 0
@@ -141419,16 +141334,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184838e9706b4951490f622be00a94d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHunger: {fileID: 1352658368336968692}
   slotholder: {fileID: 976931094}
   hotbar: {fileID: 842999721}
   itemClassToAdd: {fileID: 11400000, guid: 5fcdee90b716bcdc7b71ccb86ff4565f, type: 2}
   itemClassToRemove: {fileID: 11400000, guid: ad36bcc7328ee21eead6c2173c40b281, type: 2}
   movingCursor: {fileID: 515542054}
-  weaponSlot: {fileID: 1807080837}
-  shieldSlot: {fileID: 1560074932}
+  weaponObject: {fileID: 0}
   isWeaponEquiped: 0
-  isshieldEquiped: 0
 --- !u!114 &6230663729389802127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141442,10 +141354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 6230663729389802126}
-  playerMana: {fileID: 6230663729389802128}
   sword: {fileID: 1366222874}
-  shield: {fileID: 541017643}
-  magic_ball: {fileID: 425397966}
 --- !u!114 &6230663729389802128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142028,7 +141937,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactTag: Press E to collect Rock
   playerInventory: {fileID: 6230663729389802126}
-  itemClass: {fileID: 11400000, guid: fb189f97fc7208388974dd2d4e181154, type: 2}
 --- !u!4 &8515088473548454167
 Transform:
   m_ObjectHideFlags: 0

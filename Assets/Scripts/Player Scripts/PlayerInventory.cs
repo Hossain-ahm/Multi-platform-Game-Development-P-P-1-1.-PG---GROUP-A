@@ -84,34 +84,38 @@ public class PlayerInventory : MonoBehaviour
             }
             
         }
-
-
-        if (Input.GetMouseButtonDown(1))
+        try
         {
+            if (Input.GetMouseButtonDown(1))
+            {
 
-            checkslot = new SlotClass(GetClosestSlot());
-            if (checkslot.GetItem().GetConsumableItem() != null)
-            {
-                playerHunger.Eat(checkslot.GetItem().GetConsumableItem().restoreHunger);
-                RemoveItem(checkslot.GetItem());
-            }
-            else
-            {
-                if (checkslot.GetItem().GetToolItem() != null)
+                checkslot = new SlotClass(GetClosestSlot());
+                if (checkslot.GetItem().GetConsumableItem() != null)
                 {
-                        weapon = new SlotClass(checkslot);
-                        isWeaponEquiped = true;
+                    playerHunger.Eat(checkslot.GetItem().GetConsumableItem().restoreHunger);
+                    RemoveItem(checkslot.GetItem());
                 }
                 else
                 {
-                    if (checkslot.GetItem().GetArmourItem() != null)
+                    if (checkslot.GetItem().GetToolItem() != null)
                     {
-                        shield = new SlotClass(checkslot);
-                        isshieldEquiped = true;
+                        weapon = new SlotClass(checkslot);
+                        isWeaponEquiped = true;
+                    }
+                    else
+                    {
+                        if (checkslot.GetItem().GetArmourItem() != null)
+                        {
+                            shield = new SlotClass(checkslot);
+                            isshieldEquiped = true;
+                        }
                     }
                 }
+                checkslot.Clear();
             }
-            checkslot.Clear();
+        }
+        catch (Exception e) { 
+            Debug.Log(e);
         }
 
         if (isWeaponEquiped)
