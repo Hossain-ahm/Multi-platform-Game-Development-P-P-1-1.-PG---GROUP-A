@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3718a298b972437b608de998ed1f58, type: 3}
   m_Name: stick
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: stick
   itemIcon: {fileID: 21300000, guid: cd6904d307c4ff5c68b5e646ed65ebbc, type: 3}
   isStackable: 1

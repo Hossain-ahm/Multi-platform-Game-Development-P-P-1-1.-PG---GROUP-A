@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0df04a08adc4445abcfe759896a57be9, type: 3}
   m_Name: food
   m_EditorClassIdentifier: 
-  itemName: 
-  itemIcon: {fileID: 0}
+  itemName: apple
+  itemIcon: {fileID: 21300000, guid: 20dd41f77968e293f8479068b9fec993, type: 3}
   isStackable: 1
-  restoreHunger: 0
+  restoreHunger: 20
   consumableType: 0

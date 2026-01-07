@@ -1,18 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class CraftinUI : MonoBehaviour
+namespace UI_Scripts
 {
-    [SerializeField] private GameObject craftingUI;
-    // Start is called before the first frame update
-    void Start()
+    public class CraftinUI : MonoBehaviour
     {
-        craftingUI.SetActive(false);
-    }
+        [SerializeField] private GameObject craftingUI;
+        // Start is called before the first frame update
+        void Start()
+        {
+            craftingUI.SetActive(false);
+        }
 
-    public void showCraftingUI()
-    {
-        craftingUI.SetActive(true);
+        public void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                craftingUI.SetActive(false);
+            }
+        }
+
+        public void showCraftingUI()
+        {
+            craftingUI.SetActive(true);
+        }
+    
     }
 }
