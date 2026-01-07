@@ -44,6 +44,7 @@ public class PlayerInventory : MonoBehaviour
         shield = new SlotClass();
         slots = new GameObject[slotholder.transform.childCount];
         items = new SlotClass[slots.Length];
+        checkslot = new SlotClass();
         for (int i = 0; i < items.Length; i++)
         {
             items[i] = new SlotClass();
@@ -88,28 +89,29 @@ public class PlayerInventory : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
 
-            checkslot = GetClosestSlot();
-            if (checkslot != null && checkslot.GetItem().GetToolItem() != null && !isWeaponEquiped)
-            {
-                RemoveItem(checkslot.GetItem());
-                weapon = new SlotClass(checkslot);
-                isWeaponEquiped = true;
-            }
-
-            if (checkslot != null && checkslot.GetItem().GetArmourItem() != null && !isshieldEquiped)
-            {
-                RemoveItem(checkslot.GetItem());
-                shield = new SlotClass(checkslot);
-                isshieldEquiped = true;
-            }
-
-            if (checkslot != null && checkslot.GetItem().GetConsumableItem().consumableType ==
-                ConsumableClass.ConsumableType.food)
+            checkslot = new SlotClass(GetClosestSlot());
+            if (checkslot.GetItem().GetConsumableItem() != null)
             {
                 playerHunger.Eat(checkslot.GetItem().GetConsumableItem().restoreHunger);
                 RemoveItem(checkslot.GetItem());
             }
-
+            else
+            {
+                if (checkslot.GetItem().GetToolItem() != null)
+                {
+                        weapon = new SlotClass(checkslot);
+                        isWeaponEquiped = true;
+                }
+                else
+                {
+                    if (checkslot.GetItem().GetArmourItem() != null)
+                    {
+                        shield = new SlotClass(checkslot);
+                        isshieldEquiped = true;
+                    }
+                }
+            }
+            checkslot.Clear();
         }
 
         if (isWeaponEquiped)
@@ -121,14 +123,25 @@ public class PlayerInventory : MonoBehaviour
         {
             weaponSlot.transform.GetChild(1).GetComponent<Image>().enabled = false;
         }
+        if (isshieldEquiped)
+        {
+            shieldSlot.transform.GetChild(1).GetComponent<Image>().enabled = true;
+            shieldSlot.transform.GetChild(1).GetComponent<Image>().sprite = shield.GetItem().itemIcon;
+        }
+        else
+        {
+            shieldSlot.transform.GetChild(1).GetComponent<Image>().enabled = false;
+        }
             
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            AddItem(weapon.GetItem(), 1);
-            weapon.Clear();
-            isWeaponEquiped = false;
-        }
+        // if (Input.GetKeyDown(KeyCode.R) && (isWeaponEquiped) )
+        // {
+        //
+        //     AddItem(weapon.GetItem(), 1);
+        //     weapon.Clear();
+        //     isshieldEquiped = false;
+        //     isWeaponEquiped = false;
+        // }
     }
 
     private bool BeginItemMove()
