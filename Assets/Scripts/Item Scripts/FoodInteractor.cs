@@ -5,11 +5,11 @@ using UnityEngine;
 public class FoodInteractor : MonoBehaviour, IInteractor
 {
     [SerializeField] private string interactTag;
-    [SerializeField] private PlayerHunger playerHungerScript;
-    [SerializeField] private float eatAmount;
+    [SerializeField] private PlayerInventory playerInventory;
+    [SerializeField] private ItemClass itemClass;
     public void Interact()
     {
-        playerHungerScript.Eat(eatAmount);
+        playerInventory.AddItem(itemClass, 1);
         Destroy(gameObject);
     }
 

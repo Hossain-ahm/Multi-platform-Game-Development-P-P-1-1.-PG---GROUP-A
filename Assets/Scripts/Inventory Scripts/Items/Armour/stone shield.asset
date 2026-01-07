@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a3718a298b972437b608de998ed1f58, type: 3}
-  m_Name: stick
+  m_Script: {fileID: 11500000, guid: 75e2d633ed5aacceba7e8650dad1dc16, type: 3}
+  m_Name: stone shield
   m_EditorClassIdentifier: 
-  itemName: stick
-  itemIcon: {fileID: 21300000, guid: cd6904d307c4ff5c68b5e646ed65ebbc, type: 3}
-  isStackable: 1
+  itemName: shield
+  itemIcon: {fileID: 21300000, guid: 3ebf98e616e08c06db3fbe3c15dbf6f9, type: 3}
+  isStackable: 0
+  armourClass: 0

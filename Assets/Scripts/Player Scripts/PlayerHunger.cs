@@ -36,4 +36,6 @@ public class PlayerHunger : MonoBehaviour
     {
 	    hunger += amount;
     }
+    
+    public float GetHunger(){return hunger;}
 }
