@@ -53,4 +53,5 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("Player died");
         // Future: disable controls, play animation, trigger game over
     }
+
 }

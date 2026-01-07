@@ -4,106 +4,166 @@ using UnityEngine;
 
 public class BossAI : MonoBehaviour
 {
+    enum State { Idle, Chase, Return }
+    State currentState = State.Idle;
+
     [Header("Idle Hover")]
     public float hoverAmplitude = 1f;
     public float hoverSpeed = 1f;
-    [Header("Chase & Attack")]
-    public float chaseSpeed = 10f;          // Speed while chasing player
-    public float attackRange = 20f;         // Distance to start shooting
-    public GameObject projectilePrefab;     // Prefab for boss projectile
-    public Transform firePoint;             // Assign 'BossFirePoint' here
-    public float fireCooldown = 2f;         // Time between shots
 
-    private Vector3 originPosition;
-    private bool playerInArena = false;
+    [Header("Chase")]
+    public float chaseSpeed = 10f;
+    public float attackRange = 20f;
+
+    [Header("Combat")]
+    public GameObject projectilePrefab;
+    public Transform firePoint;
+    public float fireCooldown = 2f;
+
+    float fireTimer;
+
     private Transform player;
-    private float fireTimer = 0f;
+    private Vector3 originPosition;
+    private bool playerInArena;
+    private Quaternion originRotation;
 
     void Start()
     {
-        originPosition = transform.position;
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        originPosition = transform.position;
+        originRotation = transform.rotation;
     }
 
     void Update()
     {
-        if (!playerInArena)
+        switch (currentState)
         {
-            IdleHover();
-            if (playerInArena)
-            {
-                ChaseAndAttack();
-            }
+            case State.Idle:
+                HandleIdle();
+                break;
+
+            case State.Chase:
+                HandleChase();
+                break;
+
+            case State.Return:
+                HandleReturn();
+                break;
         }
     }
 
-    void IdleHover()
+    /* ---------- STATES ---------- */
+
+    void HandleIdle()
     {
-        Vector3 newPos = originPosition;
-        newPos.y += Mathf.Sin(Time.time * hoverSpeed) * hoverAmplitude;
-        transform.position = newPos;
+        HoverAtOrigin();
+
+        if (playerInArena)
+        {
+            currentState = State.Chase;
+        }
     }
 
-    // Called from BossArena
+    void HandleChase()
+    {
+        if (!playerInArena)
+        {
+            fireTimer = 0f;
+            currentState = State.Return;
+            return;
+        }
+
+        Vector3 dir = player.position - transform.position;
+        float distance = dir.magnitude;
+
+        FaceDirection(dir);
+
+        if (distance > attackRange)
+        {
+            transform.position += dir.normalized * chaseSpeed * Time.deltaTime;
+            fireTimer = 0f;
+        }
+        else
+        {
+            HandleShooting(dir);
+        }
+    }
+
+    void HandleReturn()
+    {
+        Vector3 dir = originPosition - transform.position;
+
+        FaceDirection(dir);
+
+        transform.position += dir.normalized * chaseSpeed * Time.deltaTime;
+
+        if (dir.magnitude < 0.5f)
+        {
+            transform.position = originPosition;
+            transform.rotation = originRotation;
+            currentState = State.Idle;
+        }
+    }
+
+    /* ---------- BEHAVIOURS ---------- */
+
+    void HoverAtOrigin()
+    {
+        Vector3 pos = originPosition;
+        pos.y += Mathf.Sin(Time.time * hoverSpeed) * hoverAmplitude;
+        transform.position = pos;
+    }
+
+    void FaceDirection(Vector3 dir)
+    {
+        if (dir.sqrMagnitude < 0.01f) return;
+
+        Quaternion targetRot = Quaternion.LookRotation(dir);
+        transform.rotation = Quaternion.Slerp(
+            transform.rotation,
+            targetRot,
+            5f * Time.deltaTime
+        );
+    }
+
+    /* ---------- ARENA CALLBACKS ---------- */
+
     public void PlayerEnteredArena()
     {
         playerInArena = true;
-        Debug.Log("Player entered arena: Boss activated");
     }
 
     public void PlayerExitedArena()
     {
         playerInArena = false;
-        Debug.Log("Player exited arena: Boss returning to idle");
     }
 
-    void ChaseAndAttack()
+    void HandleShooting(Vector3 dir)
     {
-        if (player == null) return;
-
-        // Move toward player in 3D
-        Vector3 direction = player.position - transform.position;
-        transform.position += direction.normalized * chaseSpeed * Time.deltaTime;
-
-        // Face player
-        if (direction.sqrMagnitude > 0f)
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(
-                transform.rotation,
-                targetRotation,
-                5f * Time.deltaTime
-            );
-        }
-
-        // Shooting
         fireTimer += Time.deltaTime;
-        if (direction.magnitude <= attackRange && fireTimer >= fireCooldown)
+
+        if (fireTimer >= fireCooldown)
         {
-            FireProjectile();
+            FireProjectile(dir);
             fireTimer = 0f;
         }
     }
 
-    void FireProjectile()
+    void FireProjectile(Vector3 dir)
     {
         if (projectilePrefab == null || firePoint == null) return;
-
-        Vector3 shootDirection = (player.position - firePoint.position).normalized;
 
         GameObject proj = Instantiate(
             projectilePrefab,
             firePoint.position,
-            Quaternion.LookRotation(shootDirection)
+            Quaternion.LookRotation(dir)
         );
 
-        // Assuming your projectile script has Init(Vector3 direction)
-        PlayerProjectile projectile = proj.GetComponent<PlayerProjectile>();
+        Projectile projectile = proj.GetComponent<Projectile>();
         if (projectile != null)
         {
-            projectile.Init(shootDirection);
+            projectile.Init(dir);
         }
     }
-
 
 }
