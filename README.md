@@ -18,3 +18,5 @@ https://toppng.com/show_download/240219/feather-clipart-logo-image-download-whit
 Title font: https://www.dafont.com/handwriting-3.font?l[]=10&l[]=1&text=FeatherBound
 
 wing flap SFX: https://pixabay.com/sound-effects/flapping-39306/
+
+queen image: https://www.vecteezy.com/png/72969945-adorable-pixie-queen-magical-and-radiant
