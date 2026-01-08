@@ -16,3 +16,4 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: 03a3dc448afdfcf21a7792cac1284e8f, type: 3}
   isStackable: 0
   tooltype: 0
+  dmg: 20
