@@ -84,6 +84,7 @@ public class PlayerInventory : MonoBehaviour
             }
             
         }
+
         try
         {
             if (Input.GetMouseButtonDown(1))
@@ -114,9 +115,7 @@ public class PlayerInventory : MonoBehaviour
                 checkslot.Clear();
             }
         }
-        catch (Exception e) { 
-            Debug.Log(e);
-        }
+        catch { }
 
         if (isWeaponEquiped)
         {
@@ -300,6 +299,14 @@ public class PlayerInventory : MonoBehaviour
                 return items[i];
         }
         return null;
+    }
+    public int GetswordDmag() { if (weapon.GetItem() == null)
+        {
+            return 0;
+        }
+        else {
+            return weapon.GetItem().GetToolItem().dmg;
+        } 
     }
     
     public SlotClass[] GetItems(){return items;}
