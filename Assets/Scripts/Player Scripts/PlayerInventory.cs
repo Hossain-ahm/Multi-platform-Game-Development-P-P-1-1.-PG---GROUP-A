@@ -300,6 +300,14 @@ public class PlayerInventory : MonoBehaviour
         }
         return null;
     }
+    public int GetswordDmag() { if (weapon.GetItem() == null)
+        {
+            return 0;
+        }
+        else {
+            return weapon.GetItem().GetToolItem().dmg;
+        } 
+    }
     
     public SlotClass[] GetItems(){return items;}
 }

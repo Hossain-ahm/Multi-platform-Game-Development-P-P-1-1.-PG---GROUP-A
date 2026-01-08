@@ -46,6 +46,7 @@ namespace Player_Scripts
             if (Input.GetKeyDown(KeyCode.R) && !isMagic)
             {
                 magic_ball.SetActive(true);
+                playerMana.useMana(30);
                 isMagic = true;
                 counter3 += Time.deltaTime;
             }

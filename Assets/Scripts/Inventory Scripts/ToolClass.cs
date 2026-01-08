@@ -9,6 +9,7 @@ public class ToolClass : ItemClass
     }
 
     public Tooltype tooltype;
+    public int dmg;
 
     public override ItemClass GetItem()
     {
