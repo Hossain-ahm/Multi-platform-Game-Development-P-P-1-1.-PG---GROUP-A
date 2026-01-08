@@ -73,13 +73,15 @@ public class BirdController : MonoBehaviour
         bool isDiving = (!grounded && forwardInput > 0f) || (diveUp && isBoosting);
         if (isDiving && !diveAudioPlaying)
         {
-            PlayRandomClip(diveClips, diveSource);
+            if (diveSource != null && diveClips.Length > 0)
+                PlayRandomClip(diveClips, diveSource);
             diveAudioPlaying = true;
         }
         else if (!isDiving)
         {
             diveAudioPlaying = false;
-            diveSource.Stop();
+            if (diveSource != null)
+                diveSource.Stop();
         }
 
         if (forwardInput > 0f && !blockInput)
@@ -169,7 +171,8 @@ public class BirdController : MonoBehaviour
             if (birdAnimator != null)
                 birdAnimator.SetTrigger("flap");
             StopCancelled();
-            PlayRandomClip(flapClips ,flapSource);
+            if (flapSource != null && flapClips.Length > 0)
+                PlayRandomClip(flapClips, flapSource);
         }
 
         //TURNING LOGIC
