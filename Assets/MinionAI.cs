@@ -190,7 +190,7 @@ public class MinionAI : MonoBehaviour
             Quaternion.LookRotation(direction)
         );
 
-        proj.GetComponent<Projectile>().Init(direction);
+        proj.GetComponent<EnemyProjectile>().Init(direction);
     }
 
     /* ---------- DEBUG ---------- */

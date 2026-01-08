@@ -11,7 +11,9 @@ public class BossAI : MonoBehaviour
 
     public Animator bossAnim;
     public Transform playerPlacement;
-    private BirdController birdController;
+    public BirdController birdController;
+    public string bossName;
+    public TMP_Text bossNameText;
     [Header("Idle Hover")]
     public float hoverAmplitude = 1f;
     public float hoverSpeed = 1f;
@@ -26,20 +28,18 @@ public class BossAI : MonoBehaviour
     public float fireCooldown = 2f;
     public GameObject bossUI;
     public Slider healthSlider;
-    public TMP_Text bossName;
     public EnemyHealth bossHealth;
 
     float fireTimer;
 
-    private Transform player;
+    public Transform player;
     private Vector3 originPosition;
     private bool playerInArena;
     private Quaternion originRotation;
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).transform;
-        birdController = GameObject.FindGameObjectWithTag("Player").GetComponent<BirdController>();
+        //birdController = GameObject.FindGameObjectWithTag("Player").GetComponent<BirdController>();
         originPosition = transform.position;
         originRotation = transform.rotation;
     }
@@ -157,7 +157,7 @@ public class BossAI : MonoBehaviour
         birdController.blockInput = false;
         playerInArena = true;
         bossUI.SetActive(true);
-        bossName.text = "AIR BOSS";
+        bossNameText.text = bossName;
         hoverAmplitude = 5f;
         yield break;
 
@@ -188,7 +188,7 @@ public class BossAI : MonoBehaviour
             Quaternion.LookRotation(dir)
         );
 
-        Projectile projectile = proj.GetComponent<Projectile>();
+        EnemyProjectile projectile = proj.GetComponent<EnemyProjectile>();
         if (projectile != null)
         {
             projectile.Init(dir);

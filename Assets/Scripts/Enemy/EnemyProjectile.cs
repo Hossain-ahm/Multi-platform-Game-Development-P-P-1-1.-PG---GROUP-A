@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
-public class Projectile : MonoBehaviour
+public class EnemyProjectile : MonoBehaviour
 {
     /* ---------- CONFIG ---------- */
     [Header("Projectile")]
