@@ -12,6 +12,7 @@ namespace UI_Scripts
     private bool item2check = false;
         public void OnClick()
         {
+            
             for (int i = 0; i < playerInventory.GetItems().Length; i++)
             {
                 if (playerInventory.GetItems()[i].GetItem() == item1)
@@ -25,8 +26,10 @@ namespace UI_Scripts
                 }
             }
 
+            
             if (item1check && item2check)
             {
+                Debug.Log("OnClick");
                 playerInventory.AddItem(itemClass,1);
                 playerInventory.RemoveItem(item1);
                 playerInventory.RemoveItem(item2);

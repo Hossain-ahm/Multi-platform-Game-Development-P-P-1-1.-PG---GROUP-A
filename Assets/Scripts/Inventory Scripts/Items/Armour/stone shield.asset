@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: stone shield
   m_EditorClassIdentifier: 
   itemName: shield
-  itemIcon: {fileID: 21300000, guid: 3ebf98e616e08c06db3fbe3c15dbf6f9, type: 3}
+  itemIcon: {fileID: 21300000, guid: c1d41f95766744b319ce921ca92ded17, type: 3}
   isStackable: 0
   armourClass: 0
