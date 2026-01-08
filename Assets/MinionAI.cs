@@ -51,6 +51,8 @@ public class MinionAI : MonoBehaviour
         currentState = State.Patrol;
         agent.speed = patrolSpeed;
         agent.SetDestination(currentPatrolTarget.position);
+
+        if (GetComponent<EnemyHealth>() == null) gameObject.AddComponent<EnemyHealth>();
     }
 
     void Update()

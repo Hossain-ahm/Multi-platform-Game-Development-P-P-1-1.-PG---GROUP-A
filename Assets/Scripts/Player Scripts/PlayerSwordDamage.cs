@@ -17,14 +17,14 @@ public class PlayerSwordDamage : MonoBehaviour
         swordDmg = playerInventory.GetswordDmag();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(collision.gameObject.name + "SWORD");
-        if (collision.gameObject.GetComponent<EnemyHealth>())
+        if (other.gameObject.GetComponent<EnemyHealth>())
         {
-        Debug.Log(
-            "ATK");
-            collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(swordDmg);
+            Debug.Log(
+                "ATK");
+            other.gameObject.GetComponent<EnemyHealth>().TakeDamage(swordDmg);
         }
     }
 }
+

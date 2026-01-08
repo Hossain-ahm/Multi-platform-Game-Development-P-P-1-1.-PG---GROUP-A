@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossAI : MonoBehaviour
 {
     enum State { Idle, Chase, Return }
     State currentState = State.Idle;
 
+    public Animator bossAnim;
+    public Transform playerPlacement;
+    private BirdController birdController;
     [Header("Idle Hover")]
     public float hoverAmplitude = 1f;
     public float hoverSpeed = 1f;
@@ -19,6 +24,10 @@ public class BossAI : MonoBehaviour
     public GameObject projectilePrefab;
     public Transform firePoint;
     public float fireCooldown = 2f;
+    public GameObject bossUI;
+    public Slider healthSlider;
+    public TMP_Text bossName;
+    public EnemyHealth bossHealth;
 
     float fireTimer;
 
@@ -29,7 +38,8 @@ public class BossAI : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).transform;
+        birdController = GameObject.FindGameObjectWithTag("Player").GetComponent<BirdController>();
         originPosition = transform.position;
         originRotation = transform.rotation;
     }
@@ -49,6 +59,10 @@ public class BossAI : MonoBehaviour
             case State.Return:
                 HandleReturn();
                 break;
+        }
+        if (playerInArena)
+        {
+            healthSlider.value = bossHealth.GetHealthNormalised();
         }
     }
 
@@ -80,7 +94,7 @@ public class BossAI : MonoBehaviour
 
         if (distance > attackRange)
         {
-            transform.position += dir.normalized * chaseSpeed * Time.deltaTime;
+            //transform.position += dir.normalized * chaseSpeed * Time.deltaTime;
             fireTimer = 0f;
         }
         else
@@ -110,7 +124,7 @@ public class BossAI : MonoBehaviour
     void HoverAtOrigin()
     {
         Vector3 pos = originPosition;
-        pos.y += Mathf.Sin(Time.time * hoverSpeed) * hoverAmplitude;
+        pos.y += 10 + (Mathf.Sin(Time.time * hoverSpeed) * hoverAmplitude);
         transform.position = pos;
     }
 
@@ -130,12 +144,27 @@ public class BossAI : MonoBehaviour
 
     public void PlayerEnteredArena()
     {
-        playerInArena = true;
+        if (!playerInArena)
+            StartCoroutine(BossEngagedRoutine());
     }
+    IEnumerator BossEngagedRoutine()
+    {
+        bossAnim.SetTrigger("engage");
+        birdController.gameObject.transform.position = playerPlacement.transform.position;
+        birdController.blockInput = true;
+        birdController.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        yield return new WaitForSecondsRealtime(6.0f);
+        birdController.blockInput = false;
+        playerInArena = true;
+        bossUI.SetActive(true);
+        bossName.text = "AIR BOSS";
+        hoverAmplitude = 5f;
+        yield break;
 
+    }
     public void PlayerExitedArena()
     {
-        playerInArena = false;
+        //playerInArena = false;
     }
 
     void HandleShooting(Vector3 dir)

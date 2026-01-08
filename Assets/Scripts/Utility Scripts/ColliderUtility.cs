@@ -8,7 +8,6 @@ public class ColliderUtility : MonoBehaviour
     [SerializeField] UnityEvent onTriggerEnter, onTriggerExit, onCollisionEnter, onCollisionExit;
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
         if (other.CompareTag("Player"))
             onTriggerEnter.Invoke();
     }

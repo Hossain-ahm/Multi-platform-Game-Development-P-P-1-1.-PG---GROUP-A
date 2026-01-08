@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2439297775038921821}
   - component: {fileID: 8872254790262439639}
   - component: {fileID: 752225259369762660}
-  - component: {fileID: 3431193940752383874}
+  - component: {fileID: 4676590515260761358}
   m_Layer: 0
   m_Name: Boss1Projectile
   m_TagString: Untagged
@@ -106,7 +106,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3431193940752383874
+--- !u!114 &4676590515260761358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,9 +115,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5548285285748235580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c6cdd8f79f57d4a86d27af6cdb8b04, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fdfd6f0c33630a48a15015c0f74e478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
+  speed: 25
   lifeTime: 5
-  damage: 100
+  damage: 20

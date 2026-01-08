@@ -34,7 +34,7 @@ public class BirdController : MonoBehaviour
     BirdState currentState;
 
     bool stopping, grounded;
-    [SerializeField] Animator birdAnimator;
+    [SerializeField] public Animator birdAnimator;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] ParticleSystem stoppingPS;
     [SerializeField] float groundDeceleration = 10f;

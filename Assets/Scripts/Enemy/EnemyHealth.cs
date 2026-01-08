@@ -23,6 +23,10 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    public float GetHealthNormalised()
+    {
+        return currentHealth / maxHealth;
+    }
     private void Die()
     {
         Destroy(gameObject);

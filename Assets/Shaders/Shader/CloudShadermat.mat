@@ -47,7 +47,7 @@ Material:
     - _QueueOffset: 0
     m_Colors:
     - _CloudSpeed: {r: 0, g: 0.01, b: 0, a: 0}
-    - _Color: {r: 4.5448155, g: 2.1835763, b: 0, a: 5.1173925}
+    - _Color: {r: 3.619144, g: 2.6978412, b: 1.7676448, a: 3.730234}
     - _DeformSpeed: {r: 0, g: 0.01, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &6898994165376485453
