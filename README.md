@@ -16,3 +16,9 @@ feather png: https://www.kindpng.com/imgv/hhibT_feather-png-download-image-gold-
 https://toppng.com/show_download/240219/feather-clipart-logo-image-download-white-feather-on-transparent-background
 
 Title font: https://www.dafont.com/handwriting-3.font?l[]=10&l[]=1&text=FeatherBound
+
+wing flap SFX: https://pixabay.com/sound-effects/flapping-39306/
+
+queen image: https://www.vecteezy.com/png/72969945-adorable-pixie-queen-magical-and-radiant
+
+dialogue box: https://fablefiction.itch.io/fantasy-textbox-a01-1
