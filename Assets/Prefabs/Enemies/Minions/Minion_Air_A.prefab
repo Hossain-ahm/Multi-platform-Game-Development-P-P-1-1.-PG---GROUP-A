@@ -8,25 +8,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6703266842654313418, guid: 78991cbd97e294f4dbca27df3eed0df8,
+        type: 3}
+      propertyPath: attackRange
+      value: 83.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703266842654313418, guid: 78991cbd97e294f4dbca27df3eed0df8,
+        type: 3}
+      propertyPath: detectionRange
+      value: 82.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703266842654313418, guid: 78991cbd97e294f4dbca27df3eed0df8,
+        type: 3}
+      propertyPath: disengageRange
+      value: 93.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7713191839332318322, guid: 78991cbd97e294f4dbca27df3eed0df8,
         type: 3}
       propertyPath: m_Name
-      value: Minion_Air_Base
+      value: Minion_Air_A
       objectReference: {fileID: 0}
     - target: {fileID: 8276636014914493770, guid: 78991cbd97e294f4dbca27df3eed0df8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 46.993885
       objectReference: {fileID: 0}
     - target: {fileID: 8276636014914493770, guid: 78991cbd97e294f4dbca27df3eed0df8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 49.1
       objectReference: {fileID: 0}
     - target: {fileID: 8276636014914493770, guid: 78991cbd97e294f4dbca27df3eed0df8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 456.0809
       objectReference: {fileID: 0}
     - target: {fileID: 8276636014914493770, guid: 78991cbd97e294f4dbca27df3eed0df8,
         type: 3}
@@ -63,7 +78,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1819635259004723978, guid: 78991cbd97e294f4dbca27df3eed0df8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

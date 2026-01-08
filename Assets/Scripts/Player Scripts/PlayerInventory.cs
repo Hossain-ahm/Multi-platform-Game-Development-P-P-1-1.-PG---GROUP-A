@@ -261,7 +261,10 @@ public class PlayerInventory : MonoBehaviour
         RefreshUI();
         return true;
     }
-    
+    public bool GetShield()
+    {
+        return isshieldEquiped;
+    }
     public bool RemoveItem(ItemClass itemClass)
     {
         

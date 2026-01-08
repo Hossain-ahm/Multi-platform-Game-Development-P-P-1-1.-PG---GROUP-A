@@ -8,6 +8,8 @@ public class PlayerAttackProjectile : MonoBehaviour
     [Header("Projectiles")]
     [SerializeField] private GameObject fireProjectile;
     [SerializeField] private GameObject frostProjectile;
+    [SerializeField] private float manaCost;
+    [SerializeField] private PlayerMana manaBar;
 
     void Update()
     {
@@ -25,7 +27,11 @@ public class PlayerAttackProjectile : MonoBehaviour
     private void Shoot(GameObject projectilePrefab)
     {
         if (projectilePrefab == null || firePoint == null) return;
-
+        if (manaBar.GetMana() < manaCost)
+        {
+            return;
+        }
+        manaBar.useMana(manaCost);
         GameObject proj = Instantiate(
             projectilePrefab,
             firePoint.position,
