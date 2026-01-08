@@ -101020,7 +101020,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586805342}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.058106493, y: 0.4431762, z: -0.028801959, w: 0.8940856}
+  m_LocalRotation: {x: 0.058106497, y: 0.4431762, z: -0.02880196, w: 0.8940856}
   m_LocalPosition: {x: -978.1091, y: 33.87561, z: 569.88983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -152230,7 +152230,6 @@ MonoBehaviour:
   playerMana: {fileID: 7149300225058175482}
   sword: {fileID: 1366222874}
   shield: {fileID: 244752999}
-  magic_ball: {fileID: 197376701}
 --- !u!114 &6230663729389802128 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4509481779253175234, guid: 229c4b8ad9c2c4f9695932dba623353e,
@@ -152498,6 +152497,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -21.93055
       objectReference: {fileID: 0}
+    - target: {fileID: 3429835442796410836, guid: 229c4b8ad9c2c4f9695932dba623353e,
+        type: 3}
+      propertyPath: hotbar
+      value: 
+      objectReference: {fileID: 1663089967}
+    - target: {fileID: 3429835442796410836, guid: 229c4b8ad9c2c4f9695932dba623353e,
+        type: 3}
+      propertyPath: shieldSlot
+      value: 
+      objectReference: {fileID: 1696121941}
+    - target: {fileID: 3429835442796410836, guid: 229c4b8ad9c2c4f9695932dba623353e,
+        type: 3}
+      propertyPath: slotholder
+      value: 
+      objectReference: {fileID: 420450494}
+    - target: {fileID: 3429835442796410836, guid: 229c4b8ad9c2c4f9695932dba623353e,
+        type: 3}
+      propertyPath: weaponSlot
+      value: 
+      objectReference: {fileID: 1696121941}
+    - target: {fileID: 3429835442796410836, guid: 229c4b8ad9c2c4f9695932dba623353e,
+        type: 3}
+      propertyPath: movingCursor
+      value: 
+      objectReference: {fileID: 1617433345}
     - target: {fileID: 3743436415283932728, guid: 229c4b8ad9c2c4f9695932dba623353e,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -152738,6 +152762,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.692
       objectReference: {fileID: 0}
+    - target: {fileID: 7709808754823376821, guid: 229c4b8ad9c2c4f9695932dba623353e,
+        type: 3}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 244752999}
     - target: {fileID: 7854074714835226226, guid: 229c4b8ad9c2c4f9695932dba623353e,
         type: 3}
       propertyPath: m_Name
