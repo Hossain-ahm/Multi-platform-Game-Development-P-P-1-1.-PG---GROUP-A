@@ -7851,7 +7851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactTag: Press E to collect Rock
   playerInventory: {fileID: 6230663729389802126}
-  itemClass: {fileID: 11400000, guid: c47c7a6e52b199cc0944c9fa4b905c8e, type: 2}
+  itemClass: {fileID: 0}
 --- !u!54 &305411365
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -67177,9 +67177,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37e23855835ddd631aac1c845a25d28a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemClass: {fileID: 11400000, guid: ffbd1c9181c9fd0dbb233f4023f397bb, type: 2}
-  item1: {fileID: 11400000, guid: c47c7a6e52b199cc0944c9fa4b905c8e, type: 2}
-  item2: {fileID: 11400000, guid: 7a6706611aa4679a58bee93cc02e7d8c, type: 2}
+  itemClass: {fileID: 0}
+  item1: {fileID: 0}
+  item2: {fileID: 0}
   playerInventory: {fileID: 6230663729389802126}
 --- !u!114 &1214258531
 MonoBehaviour:
@@ -72763,9 +72763,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37e23855835ddd631aac1c845a25d28a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemClass: {fileID: 11400000, guid: 65055987b3fd69ef0a614ebea313116d, type: 2}
-  item1: {fileID: 11400000, guid: 883e962580ab26f66b915289de7b7dc9, type: 2}
-  item2: {fileID: 11400000, guid: 7a6706611aa4679a58bee93cc02e7d8c, type: 2}
+  itemClass: {fileID: 0}
+  item1: {fileID: 0}
+  item2: {fileID: 0}
   playerInventory: {fileID: 6230663729389802126}
 --- !u!1 &1259283399
 GameObject:
@@ -83110,9 +83110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37e23855835ddd631aac1c845a25d28a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemClass: {fileID: 11400000, guid: ad36bcc7328ee21eead6c2173c40b281, type: 2}
-  item1: {fileID: 11400000, guid: fb189f97fc7208388974dd2d4e181154, type: 2}
-  item2: {fileID: 11400000, guid: 883e962580ab26f66b915289de7b7dc9, type: 2}
+  itemClass: {fileID: 0}
+  item1: {fileID: 0}
+  item2: {fileID: 0}
   playerInventory: {fileID: 6230663729389802126}
 --- !u!114 &1293392315
 MonoBehaviour:
@@ -90468,12 +90468,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555723617}
   m_CullTransparentMesh: 1
---- !u!1 &1560074932 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5314737608833646579, guid: 3282b505bb033dc1c8d6c9a53d0bfba9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1017689292}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1560370787
 GameObject:
   m_ObjectHideFlags: 0
@@ -97115,9 +97109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37e23855835ddd631aac1c845a25d28a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemClass: {fileID: 11400000, guid: ac99fa9475f1cd673b86eaff91b4ed9e, type: 2}
-  item1: {fileID: 11400000, guid: fb189f97fc7208388974dd2d4e181154, type: 2}
-  item2: {fileID: 11400000, guid: 7a6706611aa4679a58bee93cc02e7d8c, type: 2}
+  itemClass: {fileID: 0}
+  item1: {fileID: 0}
+  item2: {fileID: 0}
   playerInventory: {fileID: 6230663729389802126}
 --- !u!114 &1700890400
 MonoBehaviour:
@@ -108209,12 +108203,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &1807080837 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5314737608833646579, guid: 3282b505bb033dc1c8d6c9a53d0bfba9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1941877421}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1812865382
 GameObject:
   m_ObjectHideFlags: 0
@@ -129559,11 +129547,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1126523534}
+  nameText: {fileID: 0}
   characterImage: {fileID: 960357740}
   availableCharacters:
   - pfp: {fileID: 21300000, guid: 42b4920637627b301b33087faec9cfdf, type: 3}
     name: Nonad
   DialogueCanvas: {fileID: 1246742307}
+  typingSrc: {fileID: 0}
 --- !u!1 &2036262436
 GameObject:
   m_ObjectHideFlags: 0
@@ -141314,14 +141304,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184838e9706b4951490f622be00a94d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHunger: {fileID: 1352658368336968692}
+  playerHunger: {fileID: 0}
   slotholder: {fileID: 976931094}
   hotbar: {fileID: 842999721}
   itemClassToAdd: {fileID: 11400000, guid: ac99fa9475f1cd673b86eaff91b4ed9e, type: 2}
   itemClassToRemove: {fileID: 11400000, guid: ad36bcc7328ee21eead6c2173c40b281, type: 2}
   movingCursor: {fileID: 515542054}
-  weaponSlot: {fileID: 1807080837}
-  shieldSlot: {fileID: 1560074932}
+  weaponSlot: {fileID: 0}
+  shieldSlot: {fileID: 0}
   isWeaponEquiped: 0
   isshieldEquiped: 0
 --- !u!114 &6230663729389802127
@@ -141337,9 +141327,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 6230663729389802126}
-  playerMana: {fileID: 6230663729389802128}
+  playerMana: {fileID: 0}
   sword: {fileID: 1366222874}
-  shield: {fileID: 541017643}
+  shield: {fileID: 0}
 --- !u!114 &6230663729389802128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141699,6 +141689,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -41.067
       objectReference: {fileID: 0}
+    - target: {fileID: 7709808754823376821, guid: 229c4b8ad9c2c4f9695932dba623353e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7854074714835226226, guid: 229c4b8ad9c2c4f9695932dba623353e,
         type: 3}
       propertyPath: m_Name
@@ -141796,6 +141791,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2818311758049514329, guid: 229c4b8ad9c2c4f9695932dba623353e, type: 3}
+    - {fileID: 7709808754823376821, guid: 229c4b8ad9c2c4f9695932dba623353e, type: 3}
+    - {fileID: 3429835442796410836, guid: 229c4b8ad9c2c4f9695932dba623353e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8171939867785274890, guid: 229c4b8ad9c2c4f9695932dba623353e,
@@ -141958,7 +141955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactTag: Press E to collect Rock
   playerInventory: {fileID: 6230663729389802126}
-  itemClass: {fileID: 11400000, guid: fb189f97fc7208388974dd2d4e181154, type: 2}
+  itemClass: {fileID: 0}
 --- !u!4 &8515088473548454167
 Transform:
   m_ObjectHideFlags: 0
