@@ -4,30 +4,34 @@ using Inventory_Scripts;
 using UnityEngine;
 using UnityEngine.UI;
 
-    public class PlayerMana: MonoBehaviour
+public class PlayerMana : MonoBehaviour
+{
+    [SerializeField] private float mana;
+    [SerializeField] private float maxMana;
+    [SerializeField] private Image manaBar;
+    [SerializeField] private float manaRegen;
+    // Start is called before the first frame update
+    void Start()
     {
-        [SerializeField] private float mana;
-        [SerializeField] private float maxMana;
-        [SerializeField] private Image manaBar;
-        // Start is called before the first frame update
-        void Start()
-        {
-            maxMana = mana;   
-        }
+        maxMana = mana;
+    }
 
-        // Update is called once per frame
-        void Update()
-        {
-        
-            manaBar.fillAmount = Mathf.Clamp(mana/maxMana, 0, 1);
-            if (mana < maxMana)
-            {
-                mana ++;
-            }
-        }
+    // Update is called once per frame
+    void Update()
+    {
 
-        public void useMana(float amount)
+        manaBar.fillAmount = Mathf.Clamp(mana / maxMana, 0, 1);
+        if (mana < maxMana)
         {
-            mana -= amount;
+            mana += manaRegen;
         }
     }
+    public float GetMana()
+    {
+        return mana;
+    }
+    public void useMana(float amount)
+    {
+        mana -= amount;
+    }
+}

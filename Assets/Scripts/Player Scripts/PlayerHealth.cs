@@ -1,3 +1,4 @@
+using Player_Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private Image healthBar;
     [SerializeField] private Animator damageFlash;
     [SerializeField] private PlayerHunger playerHunger;
+    [SerializeField] private PlayerAttack playerAtk;
     public bool alive { get; set; }
     public bool infDamage { get; set; }
     [SerializeField] private float damageAmount = 5f; // damage per tick
@@ -78,6 +80,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
+        if (playerAtk.IsDefending()) return;
         Debug.Log("DAMAGED FOR " + amount);
         damageFlash.SetTrigger("damage");
         health -= amount;

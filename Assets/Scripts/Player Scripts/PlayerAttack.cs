@@ -63,6 +63,10 @@ namespace Player_Scripts
 
         }
         
+        public bool IsDefending()
+        {
+            return isDefending;
+        }
         
     }
 }
