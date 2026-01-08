@@ -148,4 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactTag: Press E to collect Rock
   playerInventory: {fileID: 0}
-  itemClass: {fileID: 0}
+  itemClass: {fileID: 11400000, guid: 883e962580ab26f66b915289de7b7dc9, type: 2}

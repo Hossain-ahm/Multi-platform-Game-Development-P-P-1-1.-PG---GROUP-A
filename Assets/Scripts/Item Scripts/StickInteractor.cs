@@ -7,6 +7,11 @@ public class StickInteractor : MonoBehaviour,IInteractor
     [SerializeField] private string interactTag;
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private ItemClass itemClass;
+
+    private void Start()
+    {
+        playerInventory = FindObjectOfType<PlayerInventory>();
+    }
     public void Interact()
     {
         playerInventory.AddItem(itemClass,1);

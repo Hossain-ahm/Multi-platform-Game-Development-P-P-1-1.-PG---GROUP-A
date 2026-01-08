@@ -147,5 +147,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactTag: press E to pick up
-  playerHungerScript: {fileID: 0}
-  eatAmount: 20
+  playerInventory: {fileID: 0}
+  itemClass: {fileID: 11400000, guid: 5fcdee90b716bcdc7b71ccb86ff4565f, type: 2}
