@@ -8,7 +8,8 @@ public class BossArena : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            boss.PlayerEnteredArena();
+            if (boss != null)
+                boss.PlayerEnteredArena();
             Debug.Log("Player entered arena: Boss activated");
         }
     }
@@ -17,7 +18,8 @@ public class BossArena : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            boss.PlayerExitedArena();
+            if (boss != null)
+                boss.PlayerExitedArena();
             Debug.Log("Player exited arena: Boss returning to idle");
         }
     }

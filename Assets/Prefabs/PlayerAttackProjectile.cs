@@ -10,15 +10,16 @@ public class PlayerAttackProjectile : MonoBehaviour
     [SerializeField] private GameObject frostProjectile;
     [SerializeField] private float manaCost;
     [SerializeField] private PlayerMana manaBar;
+    [SerializeField] string frostKey, fireKey;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && PlayerPrefs.GetInt(fireKey, -1) == 1)
         {
             Shoot(fireProjectile);
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && PlayerPrefs.GetInt(frostKey, -1) == 1)
         {
             Shoot(frostProjectile);
         }

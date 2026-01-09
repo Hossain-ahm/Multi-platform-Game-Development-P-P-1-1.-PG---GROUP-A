@@ -30,6 +30,8 @@ public class BossAI : MonoBehaviour
     public Slider healthSlider;
     public EnemyHealth bossHealth;
 
+    public GameObject cineCam;
+
     float fireTimer;
 
     public Transform player;
@@ -150,6 +152,7 @@ public class BossAI : MonoBehaviour
     IEnumerator BossEngagedRoutine()
     {
         bossAnim.SetTrigger("engage");
+        if (cineCam != null) cineCam.SetActive(true);
         birdController.gameObject.transform.position = playerPlacement.transform.position;
         birdController.blockInput = true;
         birdController.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -158,6 +161,7 @@ public class BossAI : MonoBehaviour
         playerInArena = true;
         bossUI.SetActive(true);
         bossNameText.text = bossName;
+        if (cineCam != null) cineCam.SetActive(false);
         hoverAmplitude = 5f;
         yield break;
 
