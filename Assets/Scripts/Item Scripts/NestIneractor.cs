@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class NestIneractor : MonoBehaviour,IInteractor
@@ -13,6 +14,6 @@ public class NestIneractor : MonoBehaviour,IInteractor
 
     public string GetInteractText()
     {
-        return "Press E to Craft";
+        return "Press F to Craft";
     }
 }

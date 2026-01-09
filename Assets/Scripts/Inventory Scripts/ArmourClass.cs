@@ -3,15 +3,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Armour item", menuName = "Item/Armour")]
 public class ArmourClass : ItemClass
 {
-    public enum ArmourType
+
+    public ArmourClassEnum armourClass;
+    public enum ArmourClassEnum
     {
-        head,
-        chest,
-        legs
+        shield
     }
-
-    public ArmourType armourType;
-
     public override ItemClass GetItem()
     {
         return this;

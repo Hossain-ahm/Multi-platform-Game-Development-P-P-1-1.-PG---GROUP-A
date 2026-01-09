@@ -1,24 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
-public class InventoryUI : MonoBehaviour
+namespace UI_Scripts
 {
-    [SerializeField] private GameObject inventoryUI;
-    [SerializeField] PlayerInventory playerInventory;
-    // Start is called before the first frame update
-    void Start()
+    public class InventoryUI : MonoBehaviour
     {
-        inventoryUI.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        [SerializeField] private GameObject inventoryUI;
+        [SerializeField] PlayerInventory playerInventory;
+        // Start is called before the first frame update
+        void Start()
         {
-            inventoryUI.SetActive(!inventoryUI.activeSelf);
+            inventoryUI.SetActive(false);
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                inventoryUI.SetActive(!inventoryUI.activeSelf);
+            }
         }
     }
 }

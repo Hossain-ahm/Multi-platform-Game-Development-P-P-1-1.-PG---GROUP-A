@@ -15,10 +15,10 @@ MonoBehaviour:
   active: 0
   mode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
   gaussianStart:
     m_OverrideState: 1
-    m_Value: 461.4
+    m_Value: 455
   gaussianEnd:
     m_OverrideState: 1
     m_Value: 500
@@ -29,14 +29,14 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   focusDistance:
-    m_OverrideState: 0
-    m_Value: 10
+    m_OverrideState: 1
+    m_Value: 2.9
   aperture:
-    m_OverrideState: 0
-    m_Value: 5.6
+    m_OverrideState: 1
+    m_Value: 1
   focalLength:
-    m_OverrideState: 0
-    m_Value: 50
+    m_OverrideState: 1
+    m_Value: 44
   bladeCount:
     m_OverrideState: 0
     m_Value: 5
@@ -131,11 +131,8 @@ MonoBehaviour:
   - {fileID: -2972408241670080119}
   - {fileID: 6533705598001252300}
   - {fileID: -4847945620140822269}
-  - {fileID: 6998586767046275371}
   - {fileID: 1852998955729866810}
   - {fileID: -8116467338952961553}
-  - {fileID: 2473208685681666456}
-  - {fileID: 6312125217101339100}
 --- !u!114 &1097197346218901739
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -157,10 +154,10 @@ MonoBehaviour:
     m_Value: 0.99
   intensity:
     m_OverrideState: 1
-    m_Value: 9
+    m_Value: 1.8
   scatter:
     m_OverrideState: 1
-    m_Value: 0.564
+    m_Value: 0.493
   clamp:
     m_OverrideState: 0
     m_Value: 65472
@@ -250,53 +247,6 @@ MonoBehaviour:
   chromaticAbberationIntensity:
     m_OverrideState: 0
     m_Value: 0.474
---- !u!114 &2473208685681666456
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb60a22f311433c4c962b888d1393f88, type: 3}
-  m_Name: PaniniProjection
-  m_EditorClassIdentifier: 
-  active: 1
-  distance:
-    m_OverrideState: 1
-    m_Value: 1
-  cropToFit:
-    m_OverrideState: 1
-    m_Value: 1
---- !u!114 &6312125217101339100
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5e1dc532bcb41949b58bc4f2abfbb7e, type: 3}
-  m_Name: LensDistortion
-  m_EditorClassIdentifier: 
-  active: 0
-  intensity:
-    m_OverrideState: 1
-    m_Value: 0.21
-  xMultiplier:
-    m_OverrideState: 1
-    m_Value: 1
-  yMultiplier:
-    m_OverrideState: 1
-    m_Value: 1
-  center:
-    m_OverrideState: 0
-    m_Value: {x: 0.5, y: 0.5}
-  scale:
-    m_OverrideState: 0
-    m_Value: 1
 --- !u!114 &6533705598001252300
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -329,33 +279,5 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0.55
   highlightsEnd:
-    m_OverrideState: 1
-    m_Value: 1
---- !u!114 &6998586767046275371
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
-  m_Name: Vignette
-  m_EditorClassIdentifier: 
-  active: 0
-  color:
-    m_OverrideState: 1
-    m_Value: {r: 0, g: 0, b: 0, a: 1}
-  center:
-    m_OverrideState: 1
-    m_Value: {x: 0.5, y: 0.5}
-  intensity:
-    m_OverrideState: 1
-    m_Value: 0.227
-  smoothness:
-    m_OverrideState: 1
-    m_Value: 0.722
-  rounded:
     m_OverrideState: 1
     m_Value: 1

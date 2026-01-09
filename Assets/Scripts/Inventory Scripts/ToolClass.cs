@@ -5,12 +5,11 @@ public class ToolClass : ItemClass
 {
     public enum Tooltype
     {
-        weapon,
-        pickaxe,
-        axe
+        weapon
     }
 
     public Tooltype tooltype;
+    public int dmg;
 
     public override ItemClass GetItem()
     {

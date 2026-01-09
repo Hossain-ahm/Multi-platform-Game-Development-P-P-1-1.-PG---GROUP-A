@@ -10,10 +10,11 @@ using UnityEngine.UIElements;
 
 public class DialogueManager : MonoBehaviour
 {
-    [SerializeField] TMP_Text dialogueText;
+    [SerializeField] TMP_Text dialogueText, nameText;
     [SerializeField] UnityEngine.UI.Image characterImage;
     [SerializeField] List<CharacterImageInstance> availableCharacters = new List<CharacterImageInstance>();
     [SerializeField] GameObject DialogueCanvas;
+    [SerializeField] AudioSource typingSrc;
 
     List<DialogInstance> currentScene = new();
     int dialoguePointer = 0;
@@ -33,10 +34,11 @@ public class DialogueManager : MonoBehaviour
         DialogueCanvas.SetActive(true);
 
         currentScene.Clear();
-        currentScene.AddRange(scene); 
+        currentScene.AddRange(scene);
 
         dialoguePointer = -1;
         textAnimating = false;
+        typingSrc.Stop();
 
         NextLine();
     }
@@ -51,12 +53,13 @@ public class DialogueManager : MonoBehaviour
         if (textAnimating)
         {
             textAnimating = false;
+            typingSrc.Stop();
         }
         else
         {
             if (dialoguePointer >= currentScene.Count - 1)
             {
-                Debug.Log(dialoguePointer + ">=" + currentScene.Count );
+                Debug.Log(dialoguePointer + ">=" + currentScene.Count);
                 Debug.Log("ENDING SCENE");
                 EndScene();
                 return;
@@ -72,6 +75,7 @@ public class DialogueManager : MonoBehaviour
                         characterImage.sprite = character.pfp;
                 }
                 //typing the text
+                nameText.text = dialogue.character.ToString();
                 StopAllCoroutines();
                 dialogueText.text = dialogue.dialog;
                 dialogueText.ForceMeshUpdate();
@@ -96,6 +100,7 @@ public class DialogueManager : MonoBehaviour
     IEnumerator ScaleTextIn(TMP_Text text, DialogInstance dialogue)
     {
         textAnimating = true;
+        typingSrc.Play();
         text.ForceMeshUpdate();
         TMP_TextInfo textInfo = text.textInfo;
 
@@ -177,6 +182,8 @@ public class DialogueManager : MonoBehaviour
             }
             if (!textAnimating)
             {
+                typingSrc.Stop();
+
                 for (int i = 0; i < textInfo.meshInfo.Length; i++)
                 {
                     Vector3[] dst = textInfo.meshInfo[i].vertices;
@@ -196,6 +203,8 @@ public class DialogueManager : MonoBehaviour
             PushMesh(text, textInfo);
             yield return null;
         }
+        textAnimating = false;
+        typingSrc.Stop();
         /*while (visibleCount == charCount)
         {
             if (dialogue.tone != DialogInstance.emotions.angry) break;

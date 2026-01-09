@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
@@ -13,6 +14,14 @@ public class BirdController : MonoBehaviour
     private float speedFactor = 0f;
     float boostDuration, boostTimer;
 
+    [Header("Bird Audio")]
+    [SerializeField] private AudioSource flapSource, diveSource;
+    [SerializeField] private AudioClip[] flapClips;
+    [SerializeField] private AudioClip[] diveClips;
+    bool diveAudioPlaying = false;
+    [SerializeField] private float fadeDuration = 0.5f;
+
+    public bool blockInput { get; set; }
     enum BirdState
     {
         Idle,
@@ -25,7 +34,7 @@ public class BirdController : MonoBehaviour
     BirdState currentState;
 
     bool stopping, grounded;
-    [SerializeField] Animator birdAnimator;
+    [SerializeField] public Animator birdAnimator;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] ParticleSystem stoppingPS;
     [SerializeField] float groundDeceleration = 10f;
@@ -44,7 +53,7 @@ public class BirdController : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && staminaBar.value >= flapStamDecay)
+        if (Input.GetKeyDown(KeyCode.Space) && staminaBar.value >= flapStamDecay && !blockInput)
         {
             grounded = false;
             stopping = false;
@@ -61,12 +70,26 @@ public class BirdController : MonoBehaviour
             rb.AddForce(Vector3.up * (hoverLiftForce), ForceMode.Acceleration);
         }
         float forwardInput = Input.GetAxis("Vertical");
-        if (forwardInput > 0f)
+        bool isDiving = (!grounded && forwardInput > 0f) || (diveUp && isBoosting);
+        if (isDiving && !diveAudioPlaying)
+        {
+            if (diveSource != null && diveClips.Length > 0)
+                PlayRandomClip(diveClips, diveSource);
+            diveAudioPlaying = true;
+        }
+        else if (!isDiving)
+        {
+            diveAudioPlaying = false;
+            if (diveSource != null)
+                diveSource.Stop();
+        }
+
+        if (forwardInput > 0f && !blockInput)
         {
             if (!grounded && staminaBar.value >= lauchStamDecay)
             {
                 rb.AddForce(transform.forward * 10f, ForceMode.Acceleration);
-                rb.AddForce(Vector3.down * (hoverLiftForce ), ForceMode.Acceleration);
+                rb.AddForce(Vector3.down * (hoverLiftForce), ForceMode.Acceleration);
                 SetState(BirdState.Dive);
                 staminaBar.value -= lauchStamDecay;
                 hasDove = true;
@@ -91,7 +114,7 @@ public class BirdController : MonoBehaviour
                 }
             }
         }
-        else if (forwardInput == 0f)
+        else if (forwardInput == 0f && !blockInput)
         {
             staminaBar.value += passiveStamGain;
 
@@ -100,9 +123,8 @@ public class BirdController : MonoBehaviour
             else if (!grounded)
                 SetState(BirdState.Hover);
         }
-
         //DIVING UP ON KEY PRESSED
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) && !blockInput)
         {
             if (!isBoosting && !diveUp && hasDove && !stopping && !grounded)
             {
@@ -129,6 +151,8 @@ public class BirdController : MonoBehaviour
             rb.AddForce(Vector3.up * lift, ForceMode.Acceleration);
             rb.AddForce(transform.forward * speedFactor / 25f, ForceMode.Acceleration);
             SetState(BirdState.DiveUp);
+
+
             if (boostTimer >= boostDuration)
             {
                 SetState(BirdState.Hover);
@@ -136,6 +160,7 @@ public class BirdController : MonoBehaviour
                 diveUp = false;
             }
         }
+
 
         //FLAP WINGS
         if (flapQueued)
@@ -146,10 +171,12 @@ public class BirdController : MonoBehaviour
             if (birdAnimator != null)
                 birdAnimator.SetTrigger("flap");
             StopCancelled();
+            if (flapSource != null && flapClips.Length > 0)
+                PlayRandomClip(flapClips, flapSource);
         }
 
         //TURNING LOGIC
-        float horizontal = Input.GetAxis("Horizontal");
+        float horizontal = Input.GetAxis("Horizontal") * (blockInput ? 0 : 1);
 
         float targetHRoll = -horizontal * (!grounded ? bankAngle : bankAngle / 2);
 
@@ -203,7 +230,7 @@ public class BirdController : MonoBehaviour
     }
     void SetState(BirdState newState)
     {
-        if (currentState == newState) return; 
+        if (currentState == newState) return;
 
         currentState = newState;
 
@@ -234,10 +261,8 @@ public class BirdController : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.layer == 6 && !stopping && !grounded)
         {
-            Debug.Log(rb.velocity);
             birdAnimator.SetBool("stopping", true);
             stoppingPS.Play();
             stopping = true;
@@ -249,5 +274,19 @@ public class BirdController : MonoBehaviour
         birdAnimator.SetBool("stopping", false);
         stoppingPS.Stop();
         stopping = false;
+    }
+    public void Die()
+    {
+        birdAnimator.SetTrigger("diving");
+        Time.timeScale = 0.1f;
+        blockInput = true;
+        FindObjectOfType<MenuManager>().DeathScreen();
+    }
+    private void PlayRandomClip(AudioClip[] clips, AudioSource src)
+    {
+        if (clips == null || clips.Length == 0 || src == null) return;
+
+        int index = Random.Range(0, clips.Length);
+        src.PlayOneShot(clips[index]);
     }
 }

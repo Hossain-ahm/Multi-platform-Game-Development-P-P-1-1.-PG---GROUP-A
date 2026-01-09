@@ -19,7 +19,7 @@ public class DialogInstance
 {
     public string dialog;
     public characters character;
-    public enum characters { nonad, player};
+    public enum characters { nonad, player, Queen_Reina};
 
     public emotions tone;
     public enum emotions { normal, angry, excited};
