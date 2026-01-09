@@ -182,7 +182,11 @@ public class BossAI : MonoBehaviour
             fireTimer = 0f;
         }
     }
-
+    private void OnDestroy()
+    {
+        healthSlider.value = 0f;
+        bossUI.SetActive(false);
+    }
     void FireProjectile(Vector3 dir)
     {
         if (projectilePrefab == null || firePoint == null) return;
