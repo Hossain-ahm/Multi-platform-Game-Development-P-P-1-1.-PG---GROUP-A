@@ -152,6 +152,7 @@ public class BossAI : MonoBehaviour
     IEnumerator BossEngagedRoutine()
     {
         bossAnim.SetTrigger("engage");
+        if (GetComponent<AudioSource>() != null) GetComponent<AudioSource>().Play();
         if (cineCam != null) cineCam.SetActive(true);
         birdController.gameObject.transform.position = playerPlacement.transform.position;
         birdController.blockInput = true;
