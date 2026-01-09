@@ -13,7 +13,7 @@ namespace UI_Scripts
 
         public void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.F) && !craftingUI.activeSelf)
             {
                 craftingUI.SetActive(false);
             }
@@ -23,6 +23,6 @@ namespace UI_Scripts
         {
             craftingUI.SetActive(true);
         }
-    
+
     }
 }

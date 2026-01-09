@@ -50,5 +50,9 @@ public class RespawnManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         birdRB.gameObject.GetComponent<BirdController>().blockInput = false;
     }
-
+    public void AddRespawnPoint(Transform point)
+    {
+        if (!respawnPoints.Contains(point))
+            respawnPoints.Add(point);
+    }
 }

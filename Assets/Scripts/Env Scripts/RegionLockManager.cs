@@ -8,6 +8,7 @@ public class Region
     public string name;
     public Collider regionCollider;
     public AudioClip ambientClip;
+    public Transform spawnPoint;
 }
 
 public class RegionLockManager : MonoBehaviour
@@ -16,6 +17,7 @@ public class RegionLockManager : MonoBehaviour
     [SerializeField] private AudioSource playerAudio; // assign player's AudioSource here
     [SerializeField] private float fadeDuration = 2f;
     [SerializeField] private DialogScript regionDialogue;
+    [SerializeField] private RespawnManager respawnManager;
 
     private int unlockedRegions = 0;
     private Coroutine fadeCoroutine;
@@ -24,8 +26,9 @@ public class RegionLockManager : MonoBehaviour
     {
         unlockedRegions = PlayerPrefs.GetInt("unlockedRegions", 0);
 
-        for (int i = 0; i < regions.Count; i++)
+        for (int i = 0; i < unlockedRegions; i++)
         {
+            respawnManager.AddRespawnPoint(regions[i].spawnPoint);
             //regions[i].regionCollider.enabled = i > unlockedRegions;
         }
     }
@@ -37,6 +40,7 @@ public class RegionLockManager : MonoBehaviour
         int currentUnlocked = PlayerPrefs.GetInt("unlockedRegions", 0);
         if (regionIndex > currentUnlocked)
         {
+            respawnManager.AddRespawnPoint(regions[regionIndex].spawnPoint);
             PlayerPrefs.SetInt("unlockedRegions", regionIndex);
             PlayerPrefs.Save();
         }
@@ -45,7 +49,7 @@ public class RegionLockManager : MonoBehaviour
     public void RegionEntered(int regionIndex)
     {
         if (regionIndex < 0 || regionIndex >= regions.Count) return;
-        if(regionIndex > PlayerPrefs.GetInt("unlockedRegions", 0))
+        if (regionIndex > PlayerPrefs.GetInt("unlockedRegions", 0))
         {
             regionDialogue.TriggerDialogue();
         }
