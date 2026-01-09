@@ -269,7 +269,7 @@ Transform:
   m_GameObject: {fileID: 4712184}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 958.0364, y: 322.7388, z: 918.36694}
+  m_LocalPosition: {x: 957.7, y: 289.2, z: 918.36694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -904,6 +904,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1723079713}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.000008099818}
+--- !u!1 &26107696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 26107697}
+  m_Layer: 0
+  m_Name: Minion_Fire_B_1_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &26107697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26107696}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -50.4, y: -59.4, z: 681.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &32235033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,7 +1196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33258230}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44324586, y: 0.38594422, z: -0.21969506, w: 0.77866185}
+  m_LocalRotation: {x: 0.44324583, y: 0.38594428, z: -0.21969512, w: 0.77866185}
   m_LocalPosition: {x: -1347.3481, y: -122.1434, z: 397.62787}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2557,6 +2588,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1333429409}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &72240507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 72240508}
+  m_Layer: 0
+  m_Name: Minion_Fire_A_1_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &72240508
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72240507}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 396.13, y: -59.4, z: 335.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &72429423
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,6 +2768,90 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &84471679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 6277581585045309280, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 738322289}
+    - target: {fileID: 6277581585045309280, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 401399456}
+    - target: {fileID: 6994786762289606872, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Fire_B_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 163.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -59.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 513.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 724b944e5c11272429909f9f1779024d, type: 3}
+--- !u!4 &84471680 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+    type: 3}
+  m_PrefabInstance: {fileID: 84471679}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &90624591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10690,8 +10836,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189223320}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.71407545, z: -0, w: 0.7000688}
-  m_LocalPosition: {x: 971.3, y: -21.3, z: -340.8}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 1003.57, y: -21.3, z: -353.7}
   m_LocalScale: {x: 18.829292, y: 18.829292, z: 18.829292}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10701,7 +10847,7 @@ Transform:
   - {fileID: 100849771}
   - {fileID: 1119576913}
   m_Father: {fileID: 1250017341}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &189223322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10714,7 +10860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 513a664dfaf9ef04bbc770c56e688b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 600
 --- !u!65 &189223323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10790,16 +10936,16 @@ MonoBehaviour:
   bossAnim: {fileID: 189223325}
   playerPlacement: {fileID: 488606319}
   birdController: {fileID: 2489159396648149425}
-  bossName: ICE GUY
+  bossName: FROSTBIRD
   bossNameText: {fileID: 1725564383}
-  hoverAmplitude: 0
-  hoverSpeed: 2
-  chaseSpeed: 40
-  attackRange: 200
-  projectilePrefab: {fileID: 5548285285748235580, guid: 1d365ce682d02db4e9dcd4fa4481ce79,
+  hoverAmplitude: 0.8
+  hoverSpeed: 0.8
+  chaseSpeed: 5
+  attackRange: 60
+  projectilePrefab: {fileID: 8500303407506784000, guid: 9029e464274935a42ab2fb5ad9018154,
     type: 3}
   firePoint: {fileID: 542804101}
-  fireCooldown: 1
+  fireCooldown: 5
   bossUI: {fileID: 1208020697}
   healthSlider: {fileID: 1226360691}
   bossHealth: {fileID: 189223322}
@@ -11059,43 +11205,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 2d22c1b2dd1214c4d835fd1f6d436db7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1004.5124
+      value: 1004.35
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 2d22c1b2dd1214c4d835fd1f6d436db7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 378.91
+      value: 346.2
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 2d22c1b2dd1214c4d835fd1f6d436db7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 974.7
+      value: 973.01
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 2d22c1b2dd1214c4d835fd1f6d436db7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.32865736
+      value: -0.2863051
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 2d22c1b2dd1214c4d835fd1f6d436db7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.8625075
+      value: 0.81733066
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 2d22c1b2dd1214c4d835fd1f6d436db7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.057390913
+      value: -0.16529833
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 2d22c1b2dd1214c4d835fd1f6d436db7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.38048854
+      value: -0.4718861
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 2d22c1b2dd1214c4d835fd1f6d436db7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -31.552
+      value: 218.61
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 2d22c1b2dd1214c4d835fd1f6d436db7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -125.464
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 2d22c1b2dd1214c4d835fd1f6d436db7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 155.816
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: 2d22c1b2dd1214c4d835fd1f6d436db7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -11396,6 +11542,95 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6010820401414629468, guid: 3282b505bb033dc1c8d6c9a53d0bfba9,
     type: 3}
   m_PrefabInstance: {fileID: 219922077}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &220493308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 6179172898802258394, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6302329664110578851, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 734869292}
+    - target: {fileID: 6302329664110578851, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 799122451}
+    - target: {fileID: 7024020856967756571, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Air_A_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 23.365
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -341
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8041a7dabed8754eb4d9a83fb83d491, type: 3}
+--- !u!4 &220493309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+    type: 3}
+  m_PrefabInstance: {fileID: 220493308}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &220983904
 GameObject:
@@ -18134,6 +18369,37 @@ Transform:
   - {fileID: 1699280120}
   m_Father: {fileID: 1199423289}
   m_LocalEulerAnglesHint: {x: 17.270012, y: -74.256355, z: 2.734405}
+--- !u!1 &326208903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 326208904}
+  m_Layer: 0
+  m_Name: Minion_Air_B_3_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &326208904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326208903}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -242.535, y: 40.05, z: -329.319}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &326813397
 GameObject:
   m_ObjectHideFlags: 0
@@ -18383,17 +18649,17 @@ PrefabInstance:
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 43.059986
+      value: 42.23
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.610012
+      value: 41.89
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 55.757996
+      value: 55.05
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
@@ -18665,6 +18931,37 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &338516878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 338516879}
+  m_Layer: 0
+  m_Name: Minion_Air_A_1_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &338516879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338516878}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 360.45, y: 6.66, z: -197.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &341645830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19269,6 +19566,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 348683580}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &350068052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 350068053}
+  m_Layer: 0
+  m_Name: Minion_Fire_A_2_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &350068053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350068052}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -517.9, y: -59.4, z: 803}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &354976634
 GameObject:
   m_ObjectHideFlags: 0
@@ -19336,6 +19664,37 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &366312541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 366312542}
+  m_Layer: 0
+  m_Name: Minion_Air_B_1_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &366312542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366312541}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -741.05, y: -17.002, z: 117.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &367732566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19625,17 +19984,17 @@ PrefabInstance:
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.954956
+      value: 40.56
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.650013
+      value: 42.46
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 54.64966
+      value: 53.86
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
@@ -19795,6 +20154,37 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.13988389, y: 0.0051715598, z: -0.033443026}
     m_Extent: {x: 0.20472024, y: 0.18469629, z: 0.13021174}
   m_DirtyAABB: 0
+--- !u!1 &394722141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 394722142}
+  m_Layer: 0
+  m_Name: Minion_Air_B_1_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &394722142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394722141}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -514.13, y: 2.55, z: -285.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &397902840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19969,6 +20359,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 400242738}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &401399455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 401399456}
+  m_Layer: 0
+  m_Name: Minion_Fire_B_2_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &401399456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401399455}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 342.3, y: -59.4, z: 535.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410850229
 GameObject:
   m_ObjectHideFlags: 0
@@ -21848,57 +22269,57 @@ PrefabInstance:
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 7.237803
+      value: 6.786441
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.424866
+      value: 47.58
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 43.679993
+      value: 42.51
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 47.344604
+      value: 47.25
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.6901769
+      value: 0.9968354
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.14235891
+      value: -0.023936488
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.694872
+      value: -0.0018197296
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.14332747
+      value: 0.07578266
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 23.309
+      value: -2.719
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -269.612
+      value: -0.416
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 8.705
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22686,17 +23107,17 @@ PrefabInstance:
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.72
+      value: 46.13
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 42.94
+      value: 42.03
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 55.86
+      value: 52.95
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
@@ -23113,8 +23534,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 548665781}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.71407545, z: -0, w: 0.7000688}
-  m_LocalPosition: {x: 971.3, y: -21.3, z: -340.8}
+  m_LocalRotation: {x: -0, y: -0.91146034, z: -0, w: 0.41138795}
+  m_LocalPosition: {x: 986.01, y: -21.3, z: -331.57}
   m_LocalScale: {x: 18.829292, y: 18.829292, z: 18.829292}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23124,7 +23545,7 @@ Transform:
   - {fileID: 69483420}
   - {fileID: 1958942111}
   m_Father: {fileID: 727535401}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -131.416, z: 0}
 --- !u!114 &548665783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23137,7 +23558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 513a664dfaf9ef04bbc770c56e688b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 700
 --- !u!65 &548665784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23213,16 +23634,16 @@ MonoBehaviour:
   bossAnim: {fileID: 548665786}
   playerPlacement: {fileID: 1817863700}
   birdController: {fileID: 2489159396648149425}
-  bossName: FIRE MAN
+  bossName: EMBERBIRD
   bossNameText: {fileID: 1725564383}
-  hoverAmplitude: 0
-  hoverSpeed: 2
-  chaseSpeed: 40
-  attackRange: 200
-  projectilePrefab: {fileID: 5548285285748235580, guid: 1d365ce682d02db4e9dcd4fa4481ce79,
+  hoverAmplitude: 1
+  hoverSpeed: 1
+  chaseSpeed: 7
+  attackRange: 60
+  projectilePrefab: {fileID: 8500303407506784000, guid: 90160b250f4349749b91f1dbec4872e7,
     type: 3}
   firePoint: {fileID: 1103527051}
-  fireCooldown: 1
+  fireCooldown: 4
   bossUI: {fileID: 1208020697}
   healthSlider: {fileID: 1226360691}
   bossHealth: {fileID: 548665783}
@@ -33642,7 +34063,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618931357}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.44324586, y: 0.38594422, z: -0.21969506, w: 0.77866185}
+  m_LocalRotation: {x: 0.44324583, y: 0.38594428, z: -0.21969512, w: 0.77866185}
   m_LocalPosition: {x: -977.6076, y: 34.37561, z: 570.2713}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -34114,6 +34535,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640750223}
   m_CullTransparentMesh: 1
+--- !u!1 &647229864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 647229865}
+  m_Layer: 0
+  m_Name: Minions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &647229865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647229864}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 163.20001, y: 60.363773, z: 409.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 942260650}
+  - {fileID: 220493309}
+  - {fileID: 726610285}
+  - {fileID: 2147236616}
+  - {fileID: 338516879}
+  - {fileID: 734869292}
+  - {fileID: 1452613322}
+  - {fileID: 1958131066}
+  - {fileID: 1550612091}
+  - {fileID: 2081437367}
+  - {fileID: 799122451}
+  - {fileID: 815995445}
+  - {fileID: 718536045}
+  - {fileID: 394722142}
+  - {fileID: 366312542}
+  - {fileID: 2011837670}
+  - {fileID: 688868790}
+  - {fileID: 745719499}
+  - {fileID: 1391514359}
+  - {fileID: 326208904}
+  - {fileID: 1520459967}
+  - {fileID: 1119021337}
+  - {fileID: 1250796025}
+  - {fileID: 1954897992}
+  - {fileID: 1867582919}
+  - {fileID: 779994993}
+  - {fileID: 2092973484}
+  - {fileID: 740888309}
+  - {fileID: 1841432786}
+  - {fileID: 2080458652}
+  - {fileID: 1847093088}
+  - {fileID: 72240508}
+  - {fileID: 1145072848}
+  - {fileID: 1937315328}
+  - {fileID: 935645913}
+  - {fileID: 350068053}
+  - {fileID: 1004536774}
+  - {fileID: 1706344284}
+  - {fileID: 26107697}
+  - {fileID: 84471680}
+  - {fileID: 738322289}
+  - {fileID: 401399456}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &647940129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34855,37 +35349,37 @@ PrefabInstance:
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7433991
+      value: 0.74457896
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.15333669
+      value: 0.24352255
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6376121
+      value: -0.6165664
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.1315166
+      value: 0.07838863
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 23.309
+      value: 27.342
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -81.239
+      value: -82.165
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -11.926
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34898,6 +35392,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 687966433}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &688868789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 688868790}
+  m_Layer: 0
+  m_Name: Minion_Air_B_2_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &688868790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688868789}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -695.424, y: -18.41, z: 82.794}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &689045233
 GameObject:
   m_ObjectHideFlags: 0
@@ -35808,6 +36333,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 715487561}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &718536044
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 649870593555527676, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Air_B_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -515.00305
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.11623
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -280.96967
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542099497484927044, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 394722142}
+    - target: {fileID: 4542099497484927044, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 366312542}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a5ac92800bcd314cbbbc742d07f622a, type: 3}
+--- !u!4 &718536045 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+    type: 3}
+  m_PrefabInstance: {fileID: 718536044}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &722172167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35886,6 +36495,95 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3d0318e7a614d5d4695635d3f8267155,
     type: 3}
   m_PrefabInstance: {fileID: 722172167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &726610284
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 6179172898802258394, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6302329664110578851, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 1958131066}
+    - target: {fileID: 6302329664110578851, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 815995445}
+    - target: {fileID: 7024020856967756571, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Air_A_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -341
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 261
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.74957514
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6619193
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -82.893
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8041a7dabed8754eb4d9a83fb83d491, type: 3}
+--- !u!4 &726610285 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+    type: 3}
+  m_PrefabInstance: {fileID: 726610284}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &727535400
 GameObject:
@@ -36162,6 +36860,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734336702}
   m_CullTransparentMesh: 1
+--- !u!1 &734869291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 734869292}
+  m_Layer: 0
+  m_Name: Minion_Air_A_2_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &734869292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734869291}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.7, y: 24.146, z: -343.69}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &737839727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36245,6 +36974,121 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6123938325071918782, guid: 2d8aa5e6a4480d02eb4fa520e90983ec,
     type: 3}
   m_PrefabInstance: {fileID: 737839727}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &738322288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 738322289}
+  m_Layer: 0
+  m_Name: Minion_Fire_B_2_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &738322289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738322288}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 165.3, y: -59.4, z: 513.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &740888308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 5836330390675501221, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 1841432786}
+    - target: {fileID: 5836330390675501221, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 2080458652}
+    - target: {fileID: 7418208279287760669, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Ice_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161591192985134629, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 651.14996
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161591192985134629, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 168.22623
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161591192985134629, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 244.01001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161591192985134629, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161591192985134629, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161591192985134629, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161591192985134629, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161591192985134629, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161591192985134629, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161591192985134629, guid: 715a6535d2e88f147bf31bcf7a72925b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 715a6535d2e88f147bf31bcf7a72925b, type: 3}
+--- !u!4 &740888309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9161591192985134629, guid: 715a6535d2e88f147bf31bcf7a72925b,
+    type: 3}
+  m_PrefabInstance: {fileID: 740888308}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &744815041
 GameObject:
@@ -36396,6 +37240,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745226914}
   m_CullTransparentMesh: 1
+--- !u!1 &745719498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 745719499}
+  m_Layer: 0
+  m_Name: Minion_Air_B_2_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &745719499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745719498}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -264.48, y: 45.52, z: -291.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &748576889
 GameObject:
   m_ObjectHideFlags: 0
@@ -41780,6 +42655,37 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1338929085}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &779994992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 779994993}
+  m_Layer: 0
+  m_Name: Minion_Ice_A_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &779994993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779994992}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1039.08, y: 185.246, z: -79.66}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &785178054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42123,6 +43029,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 791015839}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &799122450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 799122451}
+  m_Layer: 0
+  m_Name: Minion_Air_A_3_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &799122451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799122450}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -350.604, y: 6.178, z: 311.18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &806723051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42436,6 +43373,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808860869}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &815995444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 815995445}
+  m_Layer: 0
+  m_Name: Minion_Air_A_4_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &815995445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815995444}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -694.56, y: -19.56, z: -135.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &818867071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73822,6 +74790,126 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 934075981}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &935645912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935645913}
+  m_Layer: 0
+  m_Name: Minion_Fire_A_2_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &935645913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935645912}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -420.95, y: -59.4, z: 576.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &942260649
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 6179172898802258394, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6302329664110578851, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 338516879}
+    - target: {fileID: 6302329664110578851, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 1550612091}
+    - target: {fileID: 7024020856967756571, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Air_A_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 360.89398
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.8972282
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -197.29999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8041a7dabed8754eb4d9a83fb83d491, type: 3}
+--- !u!4 &942260650 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+    type: 3}
+  m_PrefabInstance: {fileID: 942260649}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &954228648
 GameObject:
   m_ObjectHideFlags: 0
@@ -75204,6 +76292,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2125181383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1004536773
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 6277581585045309280, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 1706344284}
+    - target: {fileID: 6277581585045309280, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 26107697}
+    - target: {fileID: 6994786762289606872, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Fire_B_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -234.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -59.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 688.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 724b944e5c11272429909f9f1779024d, type: 3}
+--- !u!4 &1004536774 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8702148576049271264, guid: 724b944e5c11272429909f9f1779024d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1004536773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1009385189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82067,6 +83239,90 @@ Transform:
   - {fileID: 1982788695}
   m_Father: {fileID: 1693050179}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1119021336
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 649870593555527676, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Air_B_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 444.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -84.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542099497484927044, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 1250796025}
+    - target: {fileID: 4542099497484927044, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 1954897992}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a5ac92800bcd314cbbbc742d07f622a, type: 3}
+--- !u!4 &1119021337 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1119021336}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1119576912
 GameObject:
   m_ObjectHideFlags: 0
@@ -87599,6 +88855,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1140547493}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1145072847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1145072848}
+  m_Layer: 0
+  m_Name: Minion_Fire_A_1_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1145072848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145072847}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 373.4, y: -59.4, z: 422.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1152626033
 GameObject:
   m_ObjectHideFlags: 0
@@ -99641,6 +100928,37 @@ Transform:
   - {fileID: 689045234}
   m_Father: {fileID: 243651813}
   m_LocalEulerAnglesHint: {x: 0, y: -44.926, z: 0}
+--- !u!1 &1250796024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1250796025}
+  m_Layer: 0
+  m_Name: Minion_Air_B_4_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1250796025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250796024}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 444.98, y: 10.06, z: -85.83}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1250945846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116944,8 +118262,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.32167482, y: 0.627865, z: 0.5394659}
+  m_Center: {x: -0.09071756, y: -0.09898978, z: 0.050770935}
 --- !u!23 &1341129669
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -117004,13 +118322,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341129666}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.18609525, z: 0, w: 0.9825317}
   m_LocalPosition: {x: 1018.7842, y: 13.000145, z: -339.0153}
   m_LocalScale: {x: 246.32205, y: 112.3327, z: 112.3327}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2067844517}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -21.45, z: 0}
 --- !u!1 &1347875302
 GameObject:
   m_ObjectHideFlags: 0
@@ -117690,6 +119008,90 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1001 &1391514358
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 649870593555527676, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Air_B_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -241.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 42.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -329.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542099497484927044, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 326208904}
+    - target: {fileID: 4542099497484927044, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 1520459967}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a5ac92800bcd314cbbbc742d07f622a, type: 3}
+--- !u!4 &1391514359 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1391514358}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1392786659
 GameObject:
   m_ObjectHideFlags: 0
@@ -123253,6 +124655,37 @@ Transform:
   - {fileID: 1284672129}
   m_Father: {fileID: 1035706254}
   m_LocalEulerAnglesHint: {x: 1.5041013, y: -96.096436, z: -8.765968}
+--- !u!1 &1452613321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1452613322}
+  m_Layer: 0
+  m_Name: Minion_Air_A_3_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1452613322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452613321}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -342.59, y: 5.4, z: 262.03}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1455440194
 GameObject:
   m_ObjectHideFlags: 0
@@ -124473,7 +125906,7 @@ PrefabInstance:
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.49359
+      value: 43.49
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
@@ -124483,7 +125916,7 @@ PrefabInstance:
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 53.96106
+      value: 52.98
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
@@ -125218,6 +126651,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517742756}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1520459966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1520459967}
+  m_Layer: 0
+  m_Name: Minion_Air_B_3_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1520459967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520459966}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -539, y: 3.3, z: -237.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1525678448
 GameObject:
   m_ObjectHideFlags: 0
@@ -125438,17 +126902,17 @@ PrefabInstance:
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.385986
+      value: 39.11
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 53.55001
+      value: 53.09
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 49.678993
+      value: 49.94
       objectReference: {fileID: 0}
     - target: {fileID: 9128495396850191097, guid: 3ce70d18e472b1541b64ff6c98dd7912,
         type: 3}
@@ -125768,6 +127232,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 578316164}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1550612090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1550612091}
+  m_Layer: 0
+  m_Name: Minion_Air_A_1_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1550612091
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550612090}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 360.12396, y: 6.66, z: -179.115}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1553223156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -125933,7 +127428,7 @@ MonoBehaviour:
   bossAnim: {fileID: 8242431776675447851}
   playerPlacement: {fileID: 2026657129}
   birdController: {fileID: 2489159396648149425}
-  bossName: AIR MAN
+  bossName: AEROBIRD
   bossNameText: {fileID: 1725564383}
   hoverAmplitude: 0
   hoverSpeed: 2
@@ -126735,7 +128230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586805342}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.058106516, y: 0.44317618, z: -0.028801968, w: 0.8940855}
+  m_LocalRotation: {x: 0.058106497, y: 0.4431762, z: -0.02880196, w: 0.8940856}
   m_LocalPosition: {x: -978.1091, y: 33.87561, z: 569.88983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -134521,6 +136016,37 @@ Transform:
   - {fileID: 185662743}
   m_Father: {fileID: 325269064}
   m_LocalEulerAnglesHint: {x: -12.446047, y: -3.2258043, z: -0.0000022685913}
+--- !u!1 &1706344283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1706344284}
+  m_Layer: 0
+  m_Name: Minion_Fire_B_1_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1706344284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706344283}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -233, y: -59.4, z: 689.82}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1719342031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -157342,6 +158868,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1840701665}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1841432785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1841432786}
+  m_Layer: 0
+  m_Name: Minion_Ice_B_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1841432786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841432785}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 649.48, y: 168.47, z: 243.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1844825480
 GameObject:
   m_ObjectHideFlags: 0
@@ -157484,6 +159041,115 @@ Transform:
   - {fileID: 298852336}
   m_Father: {fileID: 2053739016}
   m_LocalEulerAnglesHint: {x: 29.414303, y: 14.651313, z: -22.96657}
+--- !u!1001 &1847093087
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 6362040125698666639, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 72240508}
+    - target: {fileID: 6362040125698666639, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 1145072848}
+    - target: {fileID: 6362040125698666639, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: chaseSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362040125698666639, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: attackRange
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362040125698666639, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: patrolSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362040125698666639, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: fireCooldown
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044084047650891706, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: maxHealth
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946191942063507255, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Fire_A_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 393.66528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -59.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 333.20935
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6bdcab197fc45da4d84e4504bcd30199, type: 3}
+--- !u!4 &1847093088 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+    type: 3}
+  m_PrefabInstance: {fileID: 1847093087}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1851545569
 GameObject:
   m_ObjectHideFlags: 0
@@ -162846,6 +164512,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1175273773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1867582918
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 5091480064928854206, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: maxHealth
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518129005545086071, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 779994993}
+    - target: {fileID: 5518129005545086071, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 2092973484}
+    - target: {fileID: 7155683448273046263, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1037.3894
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155683448273046263, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 186.172
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155683448273046263, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -77.698
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155683448273046263, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155683448273046263, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155683448273046263, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155683448273046263, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155683448273046263, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155683448273046263, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155683448273046263, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833915849556618191, guid: ae228b563dd42da49a83ae40a9763208,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Ice_A
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae228b563dd42da49a83ae40a9763208, type: 3}
+--- !u!4 &1867582919 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7155683448273046263, guid: ae228b563dd42da49a83ae40a9763208,
+    type: 3}
+  m_PrefabInstance: {fileID: 1867582918}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1868558844
 GameObject:
   m_ObjectHideFlags: 0
@@ -164524,6 +166279,115 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933072150}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1937315327
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 6362040125698666639, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 935645913}
+    - target: {fileID: 6362040125698666639, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 350068053}
+    - target: {fileID: 6362040125698666639, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: chaseSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362040125698666639, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: attackRange
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362040125698666639, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: patrolSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362040125698666639, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: fireCooldown
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044084047650891706, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: maxHealth
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946191942063507255, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Fire_A_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -424
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -59.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 578
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6bdcab197fc45da4d84e4504bcd30199, type: 3}
+--- !u!4 &1937315328 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8615611479530579471, guid: 6bdcab197fc45da4d84e4504bcd30199,
+    type: 3}
+  m_PrefabInstance: {fileID: 1937315327}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1946117042
 GameObject:
   m_ObjectHideFlags: 0
@@ -164555,6 +166419,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 750602269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.000008099818}
+--- !u!1 &1954897991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1954897992}
+  m_Layer: 0
+  m_Name: Minion_Air_B_4_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1954897992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954897991}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 384.02, y: -28.535, z: -3.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1958131065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1958131066}
+  m_Layer: 0
+  m_Name: Minion_Air_A_4_PatrolPointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1958131066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958131065}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -643.199, y: -20.25, z: -68.867}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1958942110
 GameObject:
   m_ObjectHideFlags: 0
@@ -175655,6 +177581,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2011827426}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2011837669
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 649870593555527676, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Air_B_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -694.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -17.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 83.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542099497484927044, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 688868790}
+    - target: {fileID: 4542099497484927044, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 745719499}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a5ac92800bcd314cbbbc742d07f622a, type: 3}
+--- !u!4 &2011837670 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1212183371572025028, guid: 1a5ac92800bcd314cbbbc742d07f622a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2011837669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2012199401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -177072,6 +179082,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069899043}
   m_CullTransparentMesh: 1
+--- !u!1 &2080458651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2080458652}
+  m_Layer: 0
+  m_Name: Minion_Ice_B_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2080458652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080458651}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 611.36, y: 138.597, z: 584.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2081437366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2081437367}
+  m_Layer: 0
+  m_Name: Minion_Air_A_2_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2081437367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081437366}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -38.59, y: 27.656, z: -353.67}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2088620231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -186948,6 +189020,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092787930}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2092973483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2092973484}
+  m_Layer: 0
+  m_Name: Minion_Ice_A_PatrolPointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2092973484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092973483}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1044.39, y: 230.34, z: 86.93}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647229865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2094704496
 GameObject:
   m_ObjectHideFlags: 0
@@ -187750,6 +189853,95 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6123938325071918782, guid: 2d8aa5e6a4480d02eb4fa520e90983ec,
     type: 3}
   m_PrefabInstance: {fileID: 2142619226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2147236615
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 647229865}
+    m_Modifications:
+    - target: {fileID: 6179172898802258394, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6302329664110578851, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: patrolA
+      value: 
+      objectReference: {fileID: 1452613322}
+    - target: {fileID: 6302329664110578851, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: patrolB
+      value: 
+      objectReference: {fileID: 2081437367}
+    - target: {fileID: 7024020856967756571, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_Name
+      value: Minion_Air_A_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -641
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -20.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -69
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.63159096
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.77530175
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 101.665
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8041a7dabed8754eb4d9a83fb83d491, type: 3}
+--- !u!4 &2147236616 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8695345077193120291, guid: e8041a7dabed8754eb4d9a83fb83d491,
+    type: 3}
+  m_PrefabInstance: {fileID: 2147236615}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &4814213415443221
 Transform:
@@ -200507,8 +202699,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3824000653031744337}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.71407545, z: -0, w: 0.7000688}
-  m_LocalPosition: {x: 971.3, y: -21.3, z: -340.8}
+  m_LocalRotation: {x: 0.0005546179, y: -0.85118777, z: 0.024457136, w: 0.52429086}
+  m_LocalPosition: {x: 997.26, y: -8.78, z: -336.03}
   m_LocalScale: {x: 18.829292, y: 18.829292, z: 18.829292}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -200518,7 +202710,7 @@ Transform:
   - {fileID: 7448926374924806411}
   - {fileID: 9006965688400231539}
   m_Father: {fileID: 2067844517}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 2.42, y: -116.708, z: 1.417}
 --- !u!135 &7997762384206189656
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -201063,6 +203255,7 @@ SceneRoots:
   - {fileID: 504242420}
   - {fileID: 1223195719}
   - {fileID: 243651813}
+  - {fileID: 647229865}
   - {fileID: 1965214079}
   - {fileID: 103025352}
   - {fileID: 226160910}
