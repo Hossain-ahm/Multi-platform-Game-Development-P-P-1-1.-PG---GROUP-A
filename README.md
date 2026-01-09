@@ -24,3 +24,9 @@ RPG - Tortoise Boss Pack : https://assetstore.unity.com/packages/3d/characters/c
 Season2_TurtleDragon : https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/season2-turtledragon-33030
 Lowpoly Magician RIO : https://assetstore.unity.com/packages/3d/characters/humanoids/lowpoly-magician-rio-288942
 Demon Tree : https://assetstore.unity.com/packages/3d/characters/creatures/demon-tree-86461
+Kenny Voxel Pack: https://www.kenney.nl/assets/voxel-pack
+Free swords: https://assetstore.unity.com/packages/3d/props/weapons/free-low-poly-swords-rpg-weapons-198166
+Free nest: https://assetstore.unity.com/packages/3d/props/low-poly-bird-nests-229812
+Minecraft Stick: https://minecraft.fandom.com/wiki/Stick
+Star image: https://www.vecteezy.com/png/54978929-game-star-pixelated
+Health bar and icon: https://github.com/Brackeys/Health-Bar
