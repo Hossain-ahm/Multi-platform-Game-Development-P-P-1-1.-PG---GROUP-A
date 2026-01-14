@@ -47,8 +47,13 @@ Lowpoly Magician RIO : https://assetstore.unity.com/packages/3d/characters/human
 Demon Tree : https://assetstore.unity.com/packages/3d/characters/creatures/demon-tree-86461
 
 Kenny Voxel Pack: https://www.kenney.nl/assets/voxel-pack
+
 Free swords: https://assetstore.unity.com/packages/3d/props/weapons/free-low-poly-swords-rpg-weapons-198166
+
 Free nest: https://assetstore.unity.com/packages/3d/props/low-poly-bird-nests-229812
+
 Minecraft Stick: https://minecraft.fandom.com/wiki/Stick
+
 Star image: https://www.vecteezy.com/png/54978929-game-star-pixelated
+
 Health bar and icon: https://github.com/Brackeys/Health-Bar
